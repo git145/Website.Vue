@@ -1,0 +1,10 @@
+{
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+
+    "trailing-spaces.trimOnSave": true,
+
+    "git.autofetch": true,
+    "git.enableSmartCommit": true
+}
