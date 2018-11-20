@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import App from "./App.vue";
 
 /* VIEWS */
-import HelloWorld from "./views/HelloWorld.vue";
+import Introduction from "./views/Introduction.vue";
 import NotFound from "./views/NotFound.vue";
 
 Vue.use(VueRouter);
@@ -11,12 +11,12 @@ Vue.use(VueRouter);
 const routes: any = [
     {
         path: "/",
-        redirect: "hello_world"
+        redirect: "introduction"
     },
     {
-        path: "/hello_world",
-        name: "hello_world",
-        component: HelloWorld
+        path: "/introduction",
+        name: "introduction",
+        component: Introduction
     },
     {
         path: "*",

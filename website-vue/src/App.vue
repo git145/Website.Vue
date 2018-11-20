@@ -1,25 +1,31 @@
 <template>
     <div id="app">
-        <navigation v-if="isNavigation"/>
+        <site-header/>
 
-        <router-view/>
+        <navigation/>
+
+        <main>
+            <router-view/>
+        </main>
     </div>
 </template>
 
 <script lang="ts">
-    import Navigation from "./components/Navigation.vue";
     import { Vue, Component, Provide } from "vue-property-decorator";
+
+    import SiteHeader from "./partials/_site_header.vue";
+    import Navigation from "./partials/_navigation.vue";
 
     @Component({
         components: {
+            SiteHeader,
             Navigation
         }
     })
     export default class App extends Vue {
-        @Provide() private isNavigation: boolean = false;
     }
 </script>
 
 <style lang="scss">
-    @import "./assets/scss/brand/styles";
+    @import "./assets/scss/cork/styles";
 </style>
