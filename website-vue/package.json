@@ -69,5 +69,18 @@
         "last 2 versions",
         "not ie <= 8"
     ],
-    "main": "dist_electron/bundled/background.js"
+    "main": "dist_electron/bundled/background.js",
+    "build": {
+        "win": {
+            "target": [
+                {
+                    "target": "nsis",
+                    "arch": [
+                        "x64",
+                        "ia32"
+                    ]
+                }
+            ]
+        }
+    }
 }
