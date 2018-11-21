@@ -1,5 +1,5 @@
 <template>
-    <h2>
-        Introduction
-    </h2>
+    <section class="card">
+        <img src="@/assets/img/Me.png"/>
+    </section>
 </template>
