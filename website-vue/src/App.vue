@@ -2,11 +2,15 @@
     <div id="app">
         <site-header/>
 
-        <navigation/>
+        <div class="content">
+            <navigation/>
 
-        <main>
-            <router-view/>
-        </main>
+            <main>
+                <router-view/>
+            </main>
+        </div>
+
+        <site-footer/>
     </div>
 </template>
 
@@ -15,11 +19,13 @@
 
     import SiteHeader from "./partials/_site_header.vue";
     import Navigation from "./partials/_navigation.vue";
+    import SiteFooter from "./partials/_site_footer.vue";
 
     @Component({
         components: {
             SiteHeader,
-            Navigation
+            Navigation,
+            SiteFooter
         }
     })
     export default class App extends Vue {

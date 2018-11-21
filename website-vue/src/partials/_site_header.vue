@@ -1,5 +1,5 @@
 <template>
-    <header class="navigation">
+    <header>
         <h1>
             RichardKneale@AlterVista.org
         </h1>
