@@ -1,4 +1,5 @@
 export default interface INavigation {
-    linkName?: string;
-    route?: string;
+    path?: string;
+    name?: string;
+    children?: INavigation[];
 }

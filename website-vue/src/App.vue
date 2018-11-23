@@ -17,17 +17,19 @@
 <script lang="ts">
     import { Vue, Component, Provide } from "vue-property-decorator";
 
-    import SiteHeader from "./partials/_site_header.vue";
-    import Navigation from "./partials/_navigation.vue";
-    import SiteFooter from "./partials/_site_footer.vue";
+    import SiteHeader from "./views/partials/_site_header.vue";
+    import Navigation from "./views/partials/_navigation.vue";
+    import SiteFooter from "./views/partials/_site_footer.vue";
 
-    @Component({
-        components: {
-            SiteHeader,
-            Navigation,
-            SiteFooter
+    @Component(
+        {
+            components: {
+                SiteHeader,
+                Navigation,
+                SiteFooter
+            }
         }
-    })
+    )
     export default class App extends Vue {
     }
 </script>
