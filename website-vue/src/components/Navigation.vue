@@ -25,7 +25,7 @@
 <script lang='ts'>
     import { Vue, Component, Provide } from "vue-property-decorator";
 
-    import INavigation from "../../interfaces/INavigation";
+    import INavigation from "../interfaces/INavigation";
 
     @Component(
         {
@@ -53,7 +53,13 @@
             },
             {
                 path: "/games",
-                name: "games"
+                name: "games",
+                children: [
+                    {
+                        path: "/zombie_battle",
+                        name: "zombie battle"
+                    }
+                ]
             },
             {
                 path: "/music",

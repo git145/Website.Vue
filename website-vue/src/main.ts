@@ -4,8 +4,11 @@ import App from "./App.vue";
 
 /* VIEWS */
 import Introduction from "./views/Introduction.vue";
-import Temples from "./views/Temples.vue";
-import Concepts from "./views/Concepts.vue";
+import Temples from "./views/galleries/Temples.vue";
+import Concepts from "./views/galleries/Concepts.vue";
+import ZombieBattle from "./views/games/ZombieBattle.vue";
+import Music from "./views/Music.vue";
+import Arduino from "./views/Arduino.vue";
 import ComingSoon from "./views/ComingSoon.vue";
 import NotFound from "./views/NotFound.vue";
 
@@ -34,15 +37,19 @@ const routes: any = [
     },
     {
         path: "/games",
-        redirect: "/coming_soon"
+        redirect: "/zombie_battle"
+    },
+    {
+        path: "/zombie_battle",
+        component: ZombieBattle
     },
     {
         path: "/music",
-        redirect: "/coming_soon"
+        component: Music
     },
     {
         path: "/arduino",
-        redirect: "/coming_soon"
+        component: Arduino
     },
     {
         path: "/other_projects",
