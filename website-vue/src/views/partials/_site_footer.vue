@@ -1,32 +1,32 @@
 <template>
     <footer>
-        <section>
-            <ul>
-                <li>
+        <section class="footer-links">
+            <ul class="footer-links__list">
+                <li class="footer-links__item">
                     <a href="#">
                         LinkedIn
                     </a>
                 </li>
 
-                <li>
+                <li class="footer-links__item">
                     <a href="#">
                         Coroflot
                     </a>
                 </li>
 
-                <li>
+                <li class="footer-links__item">
                     <a href="#">
                         Hiive
                     </a>
                 </li>
 
-                <li>
+                <li class="footer-links__item">
                     <a href="#">
                         GitHub
                     </a>
                 </li>
 
-                <li>
+                <li class="footer-links__item">
                     <a href="#">
                         Email
                     </a>
@@ -34,7 +34,7 @@
             </ul>
         </section>
 
-        <section>
+        <section class="copyright">
             &copy; Richard Kneale {{ getYear() }}
         </section>
     </footer>

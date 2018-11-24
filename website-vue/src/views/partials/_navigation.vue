@@ -2,15 +2,17 @@
     <nav>
         <ul>
             <li v-for="link in links"
-                :key="link.id">
+                :key="link.id"
+                class="navigation__link">
                 <router-link :to="link.path">
                     {{ link.name }}
                 </router-link>
 
                 <ul>
                     <li v-for="child in link.children"
-                        :key="child.id">
-                        <router-link :to="`${link.path}/${child.path}`">
+                        :key="child.id"
+                        class="navigation__link">
+                        <router-link :to="child.path">
                             {{ child.name }}
                         </router-link>
                     </li>
@@ -36,20 +38,16 @@
                 name: "introduction"
             },
             {
-                path: "/news",
-                name: "news"
-            },
-            {
-                path: "/biography",
-                name: "biography"
-            },
-            {
                 path: "/art",
                 name: "art",
                 children: [
                     {
-                        path: "temples",
+                        path: "/temples",
                         name: "temples"
+                    },
+                    {
+                        path: "/concepts",
+                        name: "concepts"
                     }
                 ]
             },

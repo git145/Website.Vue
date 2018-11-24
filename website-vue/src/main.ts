@@ -4,9 +4,10 @@ import App from "./App.vue";
 
 /* VIEWS */
 import Introduction from "./views/Introduction.vue";
-import NotFound from "./views/NotFound.vue";
 import Temples from "./views/Temples.vue";
+import Concepts from "./views/Concepts.vue";
 import ComingSoon from "./views/ComingSoon.vue";
+import NotFound from "./views/NotFound.vue";
 
 Vue.use(VueRouter);
 
@@ -20,23 +21,16 @@ const routes: any = [
         component: Introduction
     },
     {
-        path: "/news",
-        redirect: "/coming_soon"
-    },
-    {
-        path: "/biography",
-        redirect: "/coming_soon"
-    },
-    {
         path: "/art",
-        component: Temples,
-        redirect: "art/temples",
-        children: [
-            {
-                path: "temples",
-                component: Temples
-            }
-        ]
+        redirect: "/temples",
+    },
+    {
+        path: "/temples",
+        component: Temples
+    },
+    {
+        path: "/concepts",
+        component: Concepts
     },
     {
         path: "/games",
