@@ -1,5 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import VueLazyload from "vue-lazyload";
 import App from "./App.vue";
 
 /* VIEWS */
@@ -13,6 +14,7 @@ import ComingSoon from "./views/ComingSoon.vue";
 import NotFound from "./views/NotFound.vue";
 
 Vue.use(VueRouter);
+Vue.use(VueLazyload);
 
 const routes: any = [
     {

@@ -1,4 +1,4 @@
 export default interface IImage {
     name?: string;
-    file?: string;
+    nameFile?: string;
 }

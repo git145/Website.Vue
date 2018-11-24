@@ -2,9 +2,11 @@
     background-color: $white;
     display: flex;
     flex-direction: column;
-    width: 90%;
     margin-bottom: 1.25rem;
     padding: 1.25rem;
+    width: 100%;
+    max-width: 50rem;
+    box-sizing: border-box;
 
     &__image {
         align-self: center;

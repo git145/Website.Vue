@@ -1,7 +1,10 @@
 <template>
     <div class="page">
         <section class="card">
-            <img class="card__image" src="@/assets/img/me.png"/>
+            <img v-lazy="require('@/assets/img/me.png')"
+                class="card__image"
+                alt="Me"
+                title="Me"/>
 
             <h2 class="card__heading">
                 Introduction
