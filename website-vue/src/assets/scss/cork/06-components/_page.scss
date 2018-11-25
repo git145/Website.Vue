@@ -1,5 +1,9 @@
 .page {
     display: flex;
     flex-direction: column;
-    align-items: center;
+
+    &__image,
+    &__heading {
+        align-self: center;
+    }
 }

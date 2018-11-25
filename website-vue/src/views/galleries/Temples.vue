@@ -1,8 +1,7 @@
 <template>
     <div class="page">
         <section v-for="image in images"
-            :key="image.id"
-            class="card">
+            :key="image.id">
             <a :href="require(`@/assets/img/${ imagesDirectory }/${ image.nameFile }`)"
                 class="gallery__image-link">
                 <img v-lazy="require(`@/assets/img/${ imagesDirectory }/${ image.nameFile }`)"

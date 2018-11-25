@@ -1,5 +1,55 @@
 .navigation {
+    position: absolute;
+    top: 1.125rem;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 13.4375rem;
+
+    &__icon {
+        fill: $white;
+        width: 1.875rem;
+        height: 1.875rem;
+        align-self: flex-end;
+        position: absolute;
+        right: .375rem;
+    }
+
+    &__list {
+        background-color: $black;
+        text-transform: capitalize;
+        display: none;
+        margin-top: .4375rem;
+        margin-bottom: 0;
+        padding-bottom: .4375rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        list-style: none;
+
+        &--show {
+            display: block;
+        }
+    }
+
     &__link {
         text-transform: capitalize;
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    .navigation {
+        background-color: $grey;
+        position: static;
+
+        &__icon {
+            display: none;
+        }
+
+        &__list {
+            background-color: transparent;
+            text-transform: capitalize;
+            display: block;
+        }
     }
 }
