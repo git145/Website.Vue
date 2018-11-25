@@ -10,12 +10,17 @@
         </h2>
 
         <p>
-            Welcome to my website. The website serves as my portfolio, and contains examples of work related
-            to personal, student, or professional projects I have completed. The links, or images, below can be
-            used to view further assets related to the projects. Included are examples of graphic illustration,
-            concept designs, games, 3D models, Arduino projects, and music. I will add to the site as I produce
-            more work. You are welcome to contact me with professional enquiries through LinkedIn, Coroflot,
-            Hiive, or by e-mail. My CV is available on request.
+            Welcome to my website. The website serves as my portfolio, and contains examples of work related to
+            personal, student, or professional projects I have completed. The links, or images, below can be used
+            to view further assets related to the projects. Included are examples of graphic illustration, concept
+            designs, games, 3D models, Arduino projects, and music. I will add to the site as I produce more work.
+            You are welcome to contact me with professional enquiries through LinkedIn, Coroflot, Hiive, or by
+            email.
+
+            <a href="mailto:richardkneale@hotmail.co.uk"
+                target="_top">
+                My CV is available on request.
+            </a>
         </p>
 
         <h2 class="page__heading">
@@ -24,16 +29,16 @@
 
         <p>
             I am a hard-working and approachable individual. In my free time I like to complete self-directed
-            learning because I enjoy learning new skills, which I develop quickly. I can work both individually
-            and in a team. I enjoy encouraging others to make best use of their abilities.
-            I have implemented and maintain a website.
+            learning because I enjoy learning new skills, which I develop quickly. I can work both individually and
+            in a team. I enjoy encouraging others to make best use of their abilities. I have implemented and
+            maintain a website.
         </p>
 
         <p>
-            I play many video games and develop my own in my free time. I am a keen graphic illustrator.
-            I was a member of art societies in both primary and secondary school. I have a love of music and
-            taught myself to play the electric guitar. I am interested in sports. I enjoy watching football
-            and snooker, as well as professional wrestling.
+            I play many video games and develop my own in my free time. I am a keen graphic illustrator. I was a
+            member of art societies in both primary and secondary school. I have a love of music and taught myself
+            to play the electric guitar. I am interested in sports. I enjoy watching football and snooker, as well
+            as professional wrestling.
         </p>
 
         <h2 class="page__heading">

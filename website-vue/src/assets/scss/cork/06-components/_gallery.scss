@@ -1,13 +1,20 @@
 .gallery {
-    &__image-link {
-        margin-bottom: 1.25em;
+    &__section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        align-self: center;
     }
 
     &__image {
         width: 100%;
+        max-width: 50rem;
     }
 
-    &__image-name {
-        text-align: center;
+    &__name {
+        align-self: center;
+        margin-bottom: .75rem;
     }
 }

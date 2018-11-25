@@ -1,7 +1,35 @@
 <template>
     <div class="page">
-        <h2>
-            Hello Music!
-        </h2>
+        <iframe src="https://www.youtube.com/embed/Qd9P51-aWJk"
+            allowfullscreen
+            title="The video for &quot;Daydream&quot;"></iframe>
+
+        <p>
+            Daydream (
+
+            <a :href="require('@/assets/music/daydream.mp3')"
+                download
+                title="Link to download the mp3">
+                download the mp3
+            </a>
+
+            )
+        </p>
+
+        <iframe src="https://www.youtube.com/embed/fhG2QQ0aAac"
+            allowfullscreen
+            title="The video for &quot;Feel It&quot;"></iframe>
+
+        <p>
+            Feel It (
+
+            <a :href="require('@/assets/music/feel_it.mp3')"
+                download
+                title="Link to download the mp3">
+                download the mp3
+                </a>
+
+            )
+        </p>
     </div>
 </template>

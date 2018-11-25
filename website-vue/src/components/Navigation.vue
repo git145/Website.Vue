@@ -59,8 +59,12 @@
                         name: "temples"
                     },
                     {
-                        path: "/concepts",
-                        name: "concepts"
+                        path: "/miscellaneous",
+                        name: "miscellaneous"
+                    },
+                    {
+                        path: "/tekken",
+                        name: "tekken fan art"
                     }
                 ]
             },

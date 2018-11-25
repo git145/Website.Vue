@@ -1,9 +1,10 @@
 <template>
     <div class="page">
         <section v-for="image in images"
-            :key="image.id">
+            :key="image.id"
+            class="gallery__section">
             <a :href="require(`@/assets/img/${ imagesDirectory }/${ image.nameFile }`)"
-                class="gallery__image-link">
+                class="gallery__link">
                 <img v-lazy="require(`@/assets/img/${ imagesDirectory }/${ image.nameFile }`)"
                     :alt="image.name"
                     :title="image.name"
@@ -11,7 +12,7 @@
             </a>
 
             <a :href="require(`@/assets/img/${ imagesDirectory }/${ image.nameFile }`)"
-                class="gallery__image-name">
+                class="gallery__name">
                 {{ image.name }}
             </a>
         </section>
@@ -54,6 +55,18 @@
             {
                 name: "Pyramid of Khufu",
                 nameFile: "pyramid_of_khufu.png"
+            },
+            {
+                name: "Pyramids",
+                nameFile: "pyramids.png"
+            },
+            {
+                name: "Pyramid Model",
+                nameFile: "pyramid_model.png"
+            },
+            {
+                name: "Untitled",
+                nameFile: "untitled.png"
             }
         ]
     }

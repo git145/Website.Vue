@@ -6,7 +6,8 @@ import App from "./App.vue";
 /* VIEWS */
 import Introduction from "./views/Introduction.vue";
 import Temples from "./views/galleries/Temples.vue";
-import Concepts from "./views/galleries/Concepts.vue";
+import Miscellaneous from "./views/galleries/Miscellaneous.vue";
+import Tekken from "./views/galleries/Tekken.vue";
 import ZombieBattle from "./views/games/ZombieBattle.vue";
 import Music from "./views/Music.vue";
 import Arduino from "./views/Arduino.vue";
@@ -34,8 +35,12 @@ const routes: any = [
         component: Temples
     },
     {
-        path: "/concepts",
-        component: Concepts
+        path: "/miscellaneous",
+        component: Miscellaneous
+    },
+    {
+        path: "/tekken",
+        component: Tekken
     },
     {
         path: "/games",
