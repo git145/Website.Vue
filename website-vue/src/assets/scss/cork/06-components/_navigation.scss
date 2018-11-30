@@ -6,6 +6,7 @@
     flex-direction: column;
     flex: 1;
     max-width: 13.4375rem;
+    color: $blue;
 
     &__icon {
         fill: $white;
@@ -16,24 +17,28 @@
         right: .375rem;
     }
 
-    &__list {
+    &__box {
         background-color: $black;
         text-transform: capitalize;
         display: none;
-        margin-top: .4375rem;
-        margin-bottom: 0;
-        padding-bottom: .4375rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-        list-style: none;
 
         &--show {
             display: block;
         }
     }
 
+    &__list {
+        margin-top: .4375rem;
+        margin-bottom: 0;
+        padding-bottom: .4375rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        list-style: none;
+    }
+
     &__link {
         text-transform: capitalize;
+        cursor: pointer;
     }
 }
 
@@ -46,9 +51,8 @@
             display: none;
         }
 
-        &__list {
+        &__box {
             background-color: transparent;
-            text-transform: capitalize;
             display: block;
         }
     }

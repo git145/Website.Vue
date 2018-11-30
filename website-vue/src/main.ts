@@ -2,15 +2,15 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import VueLazyload from "vue-lazyload";
 import App from "./App.vue";
+import store from "./store";
 
 /* VIEWS */
 import Introduction from "./views/Introduction.vue";
-import Temples from "./views/galleries/Temples.vue";
-import Miscellaneous from "./views/galleries/Miscellaneous.vue";
-import Tekken from "./views/galleries/Tekken.vue";
+import Art from "./views/Art.vue";
 import ZombieBattle from "./views/games/ZombieBattle.vue";
 import Music from "./views/Music.vue";
 import Arduino from "./views/Arduino.vue";
+import OtherProjects from "./views/OtherProjects.vue";
 import ComingSoon from "./views/ComingSoon.vue";
 import NotFound from "./views/NotFound.vue";
 
@@ -28,23 +28,7 @@ const routes: any = [
     },
     {
         path: "/art",
-        redirect: "/temples",
-    },
-    {
-        path: "/temples",
-        component: Temples
-    },
-    {
-        path: "/miscellaneous",
-        component: Miscellaneous
-    },
-    {
-        path: "/tekken",
-        component: Tekken
-    },
-    {
-        path: "/games",
-        redirect: "/zombie_battle"
+        component: Art
     },
     {
         path: "/zombie_battle",
@@ -60,7 +44,7 @@ const routes: any = [
     },
     {
         path: "/other_projects",
-        redirect: "/coming_soon"
+        component: OtherProjects
     },
     {
         path: "/coming_soon",
@@ -86,5 +70,6 @@ Vue.config.productionTip = false;
 new Vue({
     el: "#app",
     router,
+    store,
     render: h => h(App)
 });
