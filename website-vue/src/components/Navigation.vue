@@ -1,8 +1,8 @@
 <template>
     <nav class="navigation">
         <svg xmlns="http://www.w3.org/2000/svg"
-            width="1.5rem"
-            height="1.5rem"
+            width="24px"
+            height="24px"
             viewBox="0 0 24 24"
             class="navigation__icon"
             @click="showLinks">
@@ -104,10 +104,10 @@
 <script lang='ts'>
     import { Vue, Component, Provide } from "vue-property-decorator";
 
-    import ArtModel from "../../models/ArtModel";
+    import ArtModel from "../models/ArtModel";
 
-    import { PageEnum } from "../../enums/PageEnum";
-    import { ArtEnum } from "../../enums/ArtEnum";
+    import { PageEnum } from "../enums/PageEnum";
+    import { ArtEnum } from "../enums/ArtEnum";
 
     @Component(
         {
