@@ -6,7 +6,7 @@
     flex-direction: column;
     flex: 1;
     max-width: 13.4375rem;
-    color: $blue;
+    color: $white;
 
     &__icon {
         fill: $white;
@@ -15,6 +15,7 @@
         align-self: flex-end;
         position: absolute;
         right: .375rem;
+        cursor: pointer;
     }
 
     &__box {
@@ -46,6 +47,7 @@
     .navigation {
         background-color: $grey;
         position: static;
+        color: $blue;
 
         &__icon {
             display: none;
