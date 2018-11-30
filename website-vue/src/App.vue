@@ -35,5 +35,5 @@
 </script>
 
 <style lang="scss">
-    @import "./assets/scss/cork/styles";
+    @import "./assets/scss/default/styles";
 </style>
