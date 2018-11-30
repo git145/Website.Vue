@@ -1,5 +1,12 @@
 export enum ArtEnum {
     Temples,
     Miscellaneous,
-    Tekken
+    TekkenFanArt,
+    PanicAttack,
+    MassEffect,
+    ConceptArt,
+    ResidentEvil,
+    Toys,
+    HammerTroll,
+    WrestlingConcepts
 }

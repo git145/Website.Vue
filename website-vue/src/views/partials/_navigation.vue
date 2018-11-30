@@ -17,25 +17,63 @@
                     Introduction
                 </li>
 
-                <li class="navigation__link"
-                    @click="showArt(artEnum.Temples)">
-                    Art
+                <li class="navigation__link">
+                    <router-link :to="`/art/${artEnum.Temples}`">
+                        Art
+                    </router-link>
                 </li>
 
                 <ul class="navigation__list">
-                    <li class="navigation__link"
-                        @click="showArt(pageEnum.Temples)">
-                        Temples
+                    <li class="navigation__link">
+                        <router-link :to="`/art/${artEnum.Temples}`">
+                            Temples
+                        </router-link>
+                    </li>
+
+                    <li class="navigation__link">
+                        <router-link :to="`/art/${artEnum.Miscellaneous}`">
+                            Miscellaneous
+                        </router-link>
                     </li>
 
                     <!--<li class="navigation__link"
-                        @click="showArt(pageEnum.Miscellaneous)">
-                        Miscellaneous
+                        @click="showArt(artEnum.TekkenFanArt)">
+                        Tekken Fan Art
                     </li>
 
                     <li class="navigation__link"
-                        @click="showArt(pageEnum.Tekken)">
-                        Tekken Fan Art
+                        @click="showArt(artEnum.PanicAttack)">
+                        Panic Attack 3D Model
+                    </li>
+
+                    <li class="navigation__link"
+                        @click="showArt(artEnum.MassEffect)">
+                        Mass Effect Fan Art
+                    </li>
+
+                    <li class="navigation__link"
+                        @click="showArt(artEnum.ConceptArt)">
+                        Concept Art
+                    </li>
+
+                    <li class="navigation__link"
+                        @click="showArt(artEnum.ResidentEvil)">
+                        Resident Evil Fan Art
+                    </li>
+
+                    <li class="navigation__link"
+                        @click="showArt(artEnum.Toys)">
+                        Toys
+                    </li>
+
+                    <li class="navigation__link"
+                        @click="showArt(artEnum.HammerTroll)">
+                        Hammer Troll
+                    </li>
+
+                    <li class="navigation__link"
+                        @click="showArt(artEnum.WrestlingConcepts)">
+                        Wrestling Concepts
                     </li>-->
                 </ul>
 
@@ -66,10 +104,10 @@
 <script lang='ts'>
     import { Vue, Component, Provide } from "vue-property-decorator";
 
-    import ArtModel from "../models/ArtModel";
+    import ArtModel from "../../models/ArtModel";
 
-    import { PageEnum } from "../enums/PageEnum";
-    import { ArtEnum } from "../enums/ArtEnum";
+    import { PageEnum } from "../../enums/PageEnum";
+    import { ArtEnum } from "../../enums/ArtEnum";
 
     @Component(
         {
@@ -121,12 +159,6 @@
                         break;
                     }
             }
-        }
-
-        private showArt(artIndex: number) {
-            this.$store.commit("setArt", this.art[artIndex]);
-
-            this.$router.push("/art");
         }
     }
 </script>

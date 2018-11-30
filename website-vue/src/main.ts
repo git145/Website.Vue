@@ -27,8 +27,9 @@ const routes: any = [
         component: Introduction
     },
     {
-        path: "/art",
-        component: Art
+        path: "/art/:artIndex",
+        component: Art,
+        props: true
     },
     {
         path: "/zombie_battle",

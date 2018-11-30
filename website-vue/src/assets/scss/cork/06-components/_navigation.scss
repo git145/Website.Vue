@@ -6,7 +6,6 @@
     flex-direction: column;
     flex: 1;
     max-width: 13.4375rem;
-    color: $white;
 
     &__icon {
         fill: $white;
@@ -40,6 +39,8 @@
     &__link {
         text-transform: capitalize;
         cursor: pointer;
+        color: $blue;
+        text-decoration: underline;
     }
 }
 
@@ -47,7 +48,6 @@
     .navigation {
         background-color: $grey;
         position: static;
-        color: $blue;
 
         &__icon {
             display: none;

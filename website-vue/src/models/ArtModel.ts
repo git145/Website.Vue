@@ -61,7 +61,7 @@ export default class ArtModel {
             ]
         },
         {
-            directory: "tekken",
+            directory: "tekken_fan_art",
             images: [
                 {
                     name: "Dragon Uppercut",

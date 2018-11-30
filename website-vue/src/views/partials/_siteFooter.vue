@@ -29,7 +29,7 @@
 <script lang='ts'>
     import { Vue, Component, Provide } from "vue-property-decorator";
 
-    import ILink from "../interfaces/ILink";
+    import ILink from "../../interfaces/ILink";
 
     @Component(
         {

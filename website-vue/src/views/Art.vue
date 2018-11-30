@@ -20,16 +20,27 @@
 </template>
 
 <script lang='ts'>
-    import { Vue, Component, Provide } from "vue-property-decorator";
+    import { Vue, Component, Provide, Prop } from "vue-property-decorator";
+
+    import ArtModel from "../models/ArtModel";
+    import IArt from "../interfaces/IArt";
 
     @Component(
         {
         }
     )
     export default class Art extends Vue {
-        get art() {
-            return this.$store.state.art;
+        @Prop({
+            default: 0
+        }) artIndex: number;
+
+        mounted() {
+            console.log(this.artIndex);
         }
+
+        private artModel: ArtModel = new ArtModel();
+        private artModelValue = this.artModel.art;
+        private art = this.artModelValue[this.artIndex];
 
         @Provide() artDirectory = this.art.directory;
         @Provide() artImages = this.art.images;
