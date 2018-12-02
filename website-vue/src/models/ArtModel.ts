@@ -3,6 +3,7 @@ import IArt from "../interfaces/IArt";
 export default class ArtModel {
     public art: IArt[] = [
         {
+            title: "Temples",
             directory: "temples",
             images: [
                 {
@@ -44,6 +45,7 @@ export default class ArtModel {
             ]
         },
         {
+            title: "Miscellaneous",
             directory: "miscellaneous",
             images: [
                 {
@@ -57,10 +59,67 @@ export default class ArtModel {
                 {
                     name: "Double Header",
                     file: "double_header.png"
+                },
+                {
+                    name: "The Ascent",
+                    file: "ascent.png"
+                },
+                {
+                    name: "Pawtuxet",
+                    file: "pawtuxet.png"
+                },
+                {
+                    name: "Skull Cove",
+                    file: "skull_cove.png"
+                },
+                {
+                    name: "Windmill",
+                    file: "windmill.png"
+                },
+                {
+                    name: "The White Cliffs of Dover",
+                    file: "white_cliffs.png"
+                },
+                {
+                    name: "Ruin",
+                    file: "ruin.png"
+                },
+                {
+                    name: "Vivi (Final Fantasy IX)",
+                    file: "vivi.png"
+                },
+                {
+                    name: "Talim (Soulcalibur II)",
+                    file: "talim.png"
+                },
+                {
+                    name: "Wolverine",
+                    file: "wolverine.png"
+                },
+                {
+                    name: "Church of St. Nicholas",
+                    file: "church_st_nicholas.png"
+                },
+                {
+                    name: "ED-E (Fallout: New Vegas)",
+                    file: "ed_e.png"
+                },
+                {
+                    name: "Blob",
+                    file: "blob.png"
+                },
+                {
+                    name: "Bidston Windmill",
+                    file: "bidston_windmill.png"
+                },
+                {
+                    name: "A.J. Styles",
+                    file: "a_j_styles.png"
                 }
             ]
         },
         {
+            title: "Tekken Fan Art",
             directory: "tekken_fan_art",
             images: [
                 {
@@ -86,6 +145,7 @@ export default class ArtModel {
             ]
         },
         {
+            title: "Panic Attack 3D Model",
             directory: "panic_attack",
             images: [
                 {
@@ -103,6 +163,7 @@ export default class ArtModel {
             ]
         },
         {
+            title: "Mass Effect Fan Art",
             directory: "mass_effect",
             images: [
                 {
@@ -124,6 +185,7 @@ export default class ArtModel {
             ]
         },
         {
+            title: "Concept Art",
             directory: "concepts",
             images: [
                 {
@@ -145,10 +207,67 @@ export default class ArtModel {
                 {
                     name: "Twin",
                     file: "twin.png"
+                },
+                {
+                    name: "Spider",
+                    file: "spider_body_001.png"
+                },
+                {
+                    name: "Spider",
+                    file: "spider_body_002.png"
+                },
+                {
+                    name: "Spider",
+                    file: "spider_heads_001.png"
+                },
+                {
+                    name: "Spider",
+                    file: "spider_heads_002.png"
+                },
+                {
+                    name: "Hero Design",
+                    file: "hero_design.png"
+                },
+                {
+                    name: "Hero Designs",
+                    file: "hero_designs_001.png"
+                },
+                {
+                    name: "Hero Designs",
+                    file: "hero_designs_002.png"
+                },
+                {
+                    name: "Hero Designs",
+                    file: "hero_designs_003.png"
+                },
+                {
+                    name: "Hero Designs",
+                    file: "hero_designs_004.png"
+                },
+                {
+                    name: "Hero Designs",
+                    file: "hero_designs_005.png"
+                },
+                {
+                    name: "Hero Designs",
+                    file: "hero_designs_006.png"
+                },
+                {
+                    name: "Hero Designs",
+                    file: "hero_designs_007.png"
+                },
+                {
+                    name: "Hero Designs",
+                    file: "hero_designs_008.png"
+                },
+                {
+                    name: "Hero Designs",
+                    file: "hero_designs_009.png"
                 }
             ]
         },
         {
+            title: "Resident Evil Fan Art",
             directory: "resident_evil",
             images: [
                 {
@@ -174,6 +293,7 @@ export default class ArtModel {
             ]
         },
         {
+            title: "Toys",
             directory: "toys",
             images: [
                 {
@@ -203,6 +323,7 @@ export default class ArtModel {
             ]
         },
         {
+            title: "Hammer Troll",
             directory: "hammer_troll",
             images: [
                 {
@@ -220,6 +341,7 @@ export default class ArtModel {
             ]
         },
         {
+            title: "Wrestling Concepts",
             directory: "wrestling",
             images: [
                 {

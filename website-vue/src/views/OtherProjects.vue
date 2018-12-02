@@ -1,5 +1,3 @@
 <template>
-    <h2>
-        Other projects
-    </h2>
+    <router-view :key="$route.fullPath"/>
 </template>
