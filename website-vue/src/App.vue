@@ -6,7 +6,7 @@
             <navigation/>
 
             <main>
-                <router-view/>
+                <router-view :key="$route.fullPath"/>
             </main>
         </div>
 
@@ -17,21 +17,23 @@
 <script lang="ts">
     import { Vue, Component, Provide } from "vue-property-decorator";
 
-    import SiteHeader from "./partials/_site_header.vue";
-    import Navigation from "./partials/_navigation.vue";
-    import SiteFooter from "./partials/_site_footer.vue";
+    import SiteHeader from "./components/SiteHeader.vue";
+    import Navigation from "./components/Navigation.vue";
+    import SiteFooter from "./components/SiteFooter.vue";
 
-    @Component({
-        components: {
-            SiteHeader,
-            Navigation,
-            SiteFooter
+    @Component(
+        {
+            components: {
+                SiteHeader,
+                Navigation,
+                SiteFooter
+            }
         }
-    })
+    )
     export default class App extends Vue {
     }
 </script>
 
 <style lang="scss">
-    @import "./assets/scss/cork/styles";
+    @import "./assets/scss/default/styles";
 </style>

@@ -1,0 +1,13 @@
+@import '../../master/01-settings/typography';
+
+$font-family: $open-sans;
+$font-color: $black;
+$gloria-hallelujah: 'Gloria Hallelujah', cursive;
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $white;
+    font-size: 1rem;
+    font-weight: normal;
+}

@@ -1,0 +1,9 @@
+.page {
+    display: flex;
+    flex-direction: column;
+
+    &__image,
+    &__heading {
+        align-self: center;
+    }
+}

@@ -1,0 +1,25 @@
+.footer-links {
+    background-color: $black;
+    padding: .6rem;
+
+    &__list {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__item {
+        margin-right: 1rem;
+    }
+
+    &__link {
+        display: block;
+        height: 2.5rem;
+    }
+
+    &__name {
+        display: none;
+    }
+}
