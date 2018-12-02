@@ -1,13 +1,13 @@
 <template>
     <div class="page">
+        <h2>
+            Introduction
+        </h2>
+
         <img v-lazy="require('@/assets/img/me.png')"
             alt="Me"
             title="Me"
             class="page__image"/>
-
-        <h2 class="page__heading">
-            Introduction
-        </h2>
 
         <p>
             Welcome to my website. The website serves as my portfolio, and contains examples of work related to
@@ -23,9 +23,9 @@
             </a>
         </p>
 
-        <h2 class="page__heading">
+        <h3>
             Profile
-        </h2>
+        </h3>
 
         <p>
             I am a hard-working and approachable individual. In my free time I like to complete self-directed
@@ -41,9 +41,9 @@
             as professional wrestling.
         </p>
 
-        <h2 class="page__heading">
+        <h3>
             Key Skills
-        </h2>
+        </h3>
 
         <ul>
             <li>

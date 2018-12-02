@@ -9,10 +9,10 @@ import Introduction from "./views/Introduction.vue";
 import Art from "./views/Art.vue";
 import Games from "./views/Games.vue";
 import TipTheCrates from "./views/games/TipTheCrates.vue";
-import ZombieBattle from "./views/games/ZombieBattle.vue";
 import Music from "./views/Music.vue";
 import Arduino from "./views/Arduino.vue";
 import OtherProjects from "./views/OtherProjects.vue";
+import HeatedCutlery from "./views/other_projects/HeatedCutlery.vue";
 import ComingSoon from "./views/ComingSoon.vue";
 import NotFound from "./views/NotFound.vue";
 
@@ -40,12 +40,8 @@ const routes: any = [
             {
               path: "tip_the_crates",
               component: TipTheCrates
-            },
-            {
-              path: "zombie_battle",
-              component: ZombieBattle
             }
-          ]
+        ]
     },
     {
         path: "/music",
@@ -57,7 +53,13 @@ const routes: any = [
     },
     {
         path: "/other_projects",
-        component: OtherProjects
+        component: OtherProjects,
+        children: [
+            {
+                path: "heated_cutlery",
+                component: HeatedCutlery
+            }
+        ]
     },
     {
         path: "/coming_soon",

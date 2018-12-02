@@ -1,9 +1,14 @@
 <template>
-    <div class="page">
+    <div class="page"
+        id="top"
+        v-if="hasArt">
+        <h2>
+            {{ artTitle }}
+        </h2>
+
         <section v-for="image in artImages"
             :key="image.id"
-            class="gallery__section"
-            v-if="hasArt">
+            class="gallery__section">
             <a :href="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
                 class="gallery__link">
                 <img v-lazy="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
@@ -12,11 +17,20 @@
                     class="gallery__image">
             </a>
 
-            <a :href="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
-                class="gallery__name">
-                {{ image.name }}
-            </a>
+            <h3>
+                <a :href="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
+                    >
+                    {{ image.name }}
+                </a>
+            </h3>
         </section>
+
+        <h4>
+            <a href="#top"
+                title="Return to the top of the page">
+                Return to the top
+            </a>
+        </h4>
     </div>
 </template>
 
@@ -42,13 +56,11 @@
         private artModel: ArtModel = new ArtModel();
         private artModelValue = this.artModel.art;
 
+        @Provide() artTitle: string;
         @Provide() artDirectory: string;
         @Provide() artImages: IImage[] = [];
 
         mounted() {
-            //console.log(this.artCategory);
-            console.log(this.artModelValue);
-
             this.setArt();
         }
 
@@ -113,19 +125,35 @@
                     }
             }
 
+            this.setArtTitle(art);
+            this.setArtDirectory(art);
+            this.setArtImages(art);
+
+            this.hasArt = true;
+        }
+
+        setArtTitle(art: IArt) {
+            const artTitle = art.title;
+
+            if (artTitle !== undefined) {
+                this.artTitle = artTitle;
+            }
+        }
+
+        setArtDirectory(art: IArt) {
             const artDirectory = art.directory;
 
             if (artDirectory !== undefined) {
                 this.artDirectory = artDirectory;
             }
+        }
 
+        setArtImages(art: IArt) {
             const artImages = art.images;
 
             if (artImages !== undefined) {
                 this.artImages = artImages;
             }
-
-            this.hasArt = true;
         }
     }
 </script>

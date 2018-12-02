@@ -11,3 +11,11 @@ h1 {
     font-size: 1rem;
     font-weight: normal;
 }
+
+h2, h3 {
+    align-self: center;
+}
+
+h4 {
+    align-self: flex-end;
+}
