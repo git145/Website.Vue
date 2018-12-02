@@ -1,19 +1,24 @@
 .navigation {
     position: absolute;
-    top: 1.125rem;
+    top: 0;
     right: 0;
+    flex: 1;
+    width: 15.625rem;
     display: flex;
     flex-direction: column;
-    flex: 1;
-    max-width: 13.4375rem;
+
+    &__icon-wrapper {
+        height: 4.1875rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: .6rem;
+    }
 
     &__icon {
         fill: $white;
         width: 1.875rem;
         height: 1.875rem;
-        align-self: flex-end;
-        position: absolute;
-        right: .375rem;
         cursor: pointer;
     }
 
@@ -48,14 +53,16 @@
     .navigation {
         background-color: $grey;
         position: static;
+        max-width: 15.625rem;
 
-        &__icon {
+        &__icon-wrapper {
             display: none;
         }
 
         &__box {
             background-color: transparent;
             display: block;
+            position: static;
         }
     }
 }
