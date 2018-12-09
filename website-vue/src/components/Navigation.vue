@@ -94,6 +94,20 @@
                     <router-link to="/games/tip_the_crates">
                         Games
                     </router-link>
+
+                    <ul class="navigation__list">
+                        <li class="navigation__link">
+                            <router-link to="/games/tip_the_crates">
+                                Tip the Crates
+                            </router-link>
+                        </li>
+
+                        <li class="navigation__link">
+                            <router-link to="/games/zombie_battle">
+                                Zombie Battle
+                            </router-link>
+                        </li>
+                    </ul>
                 </li>
 
                 <li class="navigation__link">

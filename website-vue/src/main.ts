@@ -9,6 +9,7 @@ import Introduction from "./views/Introduction.vue";
 import Art from "./views/Art.vue";
 import Games from "./views/Games.vue";
 import TipTheCrates from "./views/games/TipTheCrates.vue";
+import ZombieBattle from "./views/games/ZombieBattle.vue";
 import Music from "./views/Music.vue";
 import Arduino from "./views/Arduino.vue";
 import OtherProjects from "./views/OtherProjects.vue";
@@ -38,8 +39,12 @@ const routes: any = [
         component: Games,
         children: [
             {
-              path: "tip_the_crates",
-              component: TipTheCrates
+                path: "tip_the_crates",
+                component: TipTheCrates
+            },
+            {
+                path: "zombie_battle",
+                component: ZombieBattle
             }
         ]
     },

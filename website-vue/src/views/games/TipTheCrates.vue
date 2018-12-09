@@ -4,10 +4,14 @@
             Tip the crates
         </h2>
 
-        <iframe src="https://www.youtube.com/embed/BPvylKvan30" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/BPvylKvan30"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            title="Tip the Crates"
+            class="youtube"></iframe>
 
         <a href = "https://play.google.com/store/apps/details?id=com.tipthecrate.tipthecrate"
-            title="A link to Tip the Crates">
+            title="A link to &quot;Tip the Crates&quot;">
             Available from the Play Store
         </a>
 
