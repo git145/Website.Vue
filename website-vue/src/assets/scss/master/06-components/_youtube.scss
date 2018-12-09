@@ -1,0 +1,12 @@
+.youtube {
+    border: 0;
+    width: 90%;
+    align-self: center;
+    max-width: 40rem;
+}
+
+@media only screen and (min-width: 60rem) {
+    .youtube {
+        height: 24.063rem;
+    }
+}
