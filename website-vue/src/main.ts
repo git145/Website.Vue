@@ -16,6 +16,7 @@ import OtherProjects from "./views/OtherProjects.vue";
 import HeatedCutlery from "./views/other_projects/HeatedCutlery.vue";
 import ComingSoon from "./views/ComingSoon.vue";
 import NotFound from "./views/NotFound.vue";
+import TrafficLights from "./views/arduino/TrafficLights.vue";
 
 Vue.use(VueRouter);
 Vue.use(VueLazyload);
@@ -54,7 +55,13 @@ const routes: any = [
     },
     {
         path: "/arduino",
-        component: Arduino
+        component: Arduino,
+        children: [
+            {
+                path: "traffic_lights",
+                component: TrafficLights
+            }
+        ]
     },
     {
         path: "/other_projects",

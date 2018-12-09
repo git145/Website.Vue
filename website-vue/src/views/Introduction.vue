@@ -7,7 +7,7 @@
         <img v-lazy="require('@/assets/img/me.png')"
             alt="Me"
             title="Me"
-            class="page__image"/>
+            class="page__image">
 
         <p>
             Welcome to my website. The website serves as my portfolio, and contains examples of work related to

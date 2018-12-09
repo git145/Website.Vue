@@ -117,7 +117,7 @@
                 </li>
 
                 <li class="navigation__link">
-                    <router-link to="/arduino">
+                    <router-link to="/arduino/traffic_lights">
                         Arduino
                     </router-link>
                 </li>
