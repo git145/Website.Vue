@@ -10,11 +10,6 @@
             title="Tip the Crates"
             class="youtube"></iframe>
 
-        <a href = "https://play.google.com/store/apps/details?id=com.tipthecrate.tipthecrate"
-            title="A link to &quot;Tip the Crates&quot;">
-            Available from the Play Store
-        </a>
-
         <p>
             Tip the crates to reach the goal. Earn achievements and compete to be the best.
         </p>
@@ -23,5 +18,12 @@
             The game includes continuous, timed and practice modes. It also features screens
             explaining how to play, and support for leader boards.
         </p>
+
+        <h4>
+            <a href = "https://play.google.com/store/apps/details?id=com.tipthecrate.tipthecrate"
+                title="A link to &quot;Tip the Crates&quot;">
+                Available from the Play Store
+            </a>
+        </h4>
     </div>
 </template>

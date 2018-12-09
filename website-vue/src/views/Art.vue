@@ -19,7 +19,7 @@
 
             <h3>
                 <a :href="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
-                    >
+                    class="align-center">
                     {{ image.name }}
                 </a>
             </h3>

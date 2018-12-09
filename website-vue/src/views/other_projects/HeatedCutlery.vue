@@ -6,7 +6,7 @@
         </h2>
 
         <p>
-            Completed as part of a product design and enterprise module at university.
+            Completed for a product design and enterprise module at university.
         </p>
 
         <section v-for="image in artModel.images"
@@ -21,7 +21,8 @@
             </a>
 
             <h3>
-                <a :href="require(`@/assets/img/${ artModel.directory }/${ image.file }`)">
+                <a :href="require(`@/assets/img/${ artModel.directory }/${ image.file }`)"
+                    class="align-center">
                     {{ image.name }}
                 </a>
             </h3>
@@ -51,8 +52,40 @@
             directory: "heated_cutlery",
             images: [
                 {
+                    name: "Heated Cutlery",
+                    file: "cutlery.png"
+                },
+                {
+                    name: "Heated Cutlery",
+                    file: "cutlery_orthographic.png"
+                },
+                {
+                    name: "Heated Cutlery",
+                    file: "cutlery_animation.gif"
+                },
+                {
                     name: "Dock",
                     file: "dock.png"
+                },
+                {
+                    name: "Dock",
+                    file: "dock_orthographic.png"
+                },
+                {
+                    name: "Design",
+                    file: "cutlery_design_001.png"
+                },
+                {
+                    name: "Design",
+                    file: "cutlery_design_002.png"
+                },
+                {
+                    name: "Design",
+                    file: "cutlery_design_003.png"
+                },
+                {
+                    name: "Design",
+                    file: "cutlery_design_004.png"
                 }
             ]
         }

@@ -1,6 +1,6 @@
 export default interface ILink {
     name?: string;
-    uRL?: string;
+    url?: string;
     imageFile?: string;
     target?: string;
 }

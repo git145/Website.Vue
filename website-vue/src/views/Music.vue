@@ -1,5 +1,5 @@
 <template>
-    <div class="page">
+    <div class="page music">
         <h2>
             Music
         </h2>
@@ -11,12 +11,14 @@
             class="youtube"></iframe>
 
         <h3>
-            <p>
-                Daydream (<a :href="require('@/assets/music/daydream.mp3')"
-                    download
-                    title="Link to download the mp3">
-                    download the mp3
-                </a>)
+            <p class="music__title">
+                Daydream (
+                    <a :href="require('@/assets/music/daydream.mp3')"
+                        download
+                        title="Link to download the mp3">
+                        download the mp3
+                    </a>
+                )
             </p>
         </h3>
 
@@ -28,11 +30,13 @@
 
         <h3>
             <p>
-                Feel It (<a :href="require('@/assets/music/feel_it.mp3')"
-                    download
-                    title="Link to download the mp3">
-                    download the mp3
-                    </a>)
+                Feel It (
+                    <a :href="require('@/assets/music/feel_it.mp3')"
+                        download
+                        title="Link to download the mp3">
+                        download the mp3
+                    </a>
+                )
             </p>
         </h3>
     </div>
