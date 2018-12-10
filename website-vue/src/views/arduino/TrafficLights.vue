@@ -1,7 +1,7 @@
 <template>
     <div class="page arduino">
         <h2>
-            Traffic lights
+            Traffic Lights
         </h2>
 
         <iframe src="https://www.youtube.com/embed/pm6Rjz3vErU"
@@ -15,5 +15,13 @@
             alt="Arduino traffic lights diagram"
             title="Arduino traffic lights diagram"
             class="arduino__image">
+
+        <h4>
+            <a href="./code/arduino/traffic_lights.ino"
+                download
+                title="A link to the code for the Arduino traffic light system">
+                Download the code
+            </a>
+        </h4>
     </div>
 </template>

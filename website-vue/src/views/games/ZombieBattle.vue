@@ -1,5 +1,5 @@
 <template>
-    <div class="page">
+    <div class="page games">
         <h2>
             Zombie Battle
         </h2>
@@ -8,6 +8,6 @@
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             title="Zombie Battle"
-            class="youtube"></iframe>
+            class="youtube games__youtube"></iframe>
     </div>
 </template>
