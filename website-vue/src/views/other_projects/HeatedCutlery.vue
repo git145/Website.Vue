@@ -21,8 +21,7 @@
             </a>
 
             <h3>
-                <a :href="require(`@/assets/img/${ artModel.directory }/${ image.file }`)"
-                    class="align-center">
+                <a :href="require(`@/assets/img/${ artModel.directory }/${ image.file }`)">
                     {{ image.name }}
                 </a>
             </h3>

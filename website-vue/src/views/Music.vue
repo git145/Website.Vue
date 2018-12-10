@@ -29,7 +29,7 @@
             class="youtube"></iframe>
 
         <h3>
-            <p>
+            <p class="music__title">
                 Feel It (
                     <a :href="require('@/assets/music/feel_it.mp3')"
                         download
