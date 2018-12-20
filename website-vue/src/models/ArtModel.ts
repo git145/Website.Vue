@@ -49,6 +49,10 @@ export default class ArtModel {
             directory: "miscellaneous",
             images: [
                 {
+                    name: "Blackreach (Skyrim)",
+                    file: "blackreach.png"
+                },
+                {
                     name: "Gaige (Borderlands 2)",
                     file: "gaige.png"
                 },
