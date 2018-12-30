@@ -65,6 +65,10 @@ export default class ArtModel {
                     file: "double_header.png"
                 },
                 {
+                    name: "Untitled",
+                    file: "dino.png"
+                },
+                {
                     name: "The Ascent",
                     file: "ascent.png"
                 },
