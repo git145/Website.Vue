@@ -65,7 +65,11 @@ export default class ArtModel {
                     file: "double_header.png"
                 },
                 {
-                    name: "Untitled",
+                    name: "Dino",
+                    file: "dino_day.png"
+                },
+                {
+                    name: "Dino (Series)",
                     file: "dino.png"
                 },
                 {
