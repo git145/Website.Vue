@@ -191,6 +191,10 @@ export default class ArtModel {
                     file: "mordin_lines.png"
                 },
                 {
+                    name: "Peebee",
+                    file: "peebee.png"
+                },
+                {
                     name: "Tali'Zorah nar Rayya",
                     file: "tali_zorah.png"
                 }
