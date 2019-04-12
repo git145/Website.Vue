@@ -2,21 +2,24 @@
 
 $font-family: $open-sans;
 $font-color: $black;
-$gloria-hallelujah: 'Gloria Hallelujah', cursive;
+$gloria-hallelujah: 'Gloria Hallelujah',
+cursive;
 
 h1 {
     margin-top: 0;
     margin-bottom: 0;
-    color: $white;
-    font-size: 1rem;
-    font-weight: normal;
+    color: $grey;
+    font-size: 1.5625rem;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
     display: inline;
 }
 
-h2, h3 {
+h2,
+h3 {
     align-self: center;
 }
 

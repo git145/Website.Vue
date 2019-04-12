@@ -74,12 +74,14 @@
     "build": {
         "artifactName": "website-vue.exe",
         "win": {
-            "target": [{
-                "target": "nsis",
-                "arch": [
-                    "x64"
-                ]
-            }]
+            "target": [
+                {
+                    "target": "nsis",
+                    "arch": [
+                        "x64"
+                    ]
+                }
+            ]
         }
     }
 }
