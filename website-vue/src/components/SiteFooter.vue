@@ -8,6 +8,7 @@
                             :src="require(`@/assets/img/links/${ link.imageFile }`)"
                             :alt="link.name"
                             :title="link.name"
+                            class="footer__icon"
                         >
 
                         <span class="footer__name">{{ link.name }}</span>

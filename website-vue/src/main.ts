@@ -3,6 +3,8 @@ import VueRouter from "vue-router";
 import VueLazyload from "vue-lazyload";
 import App from "./App.vue";
 import store from "./store";
+import Vuetify from 'vuetify';
+import 'vuetify/dist/vuetify.min.css';
 
 /* VIEWS */
 import Introduction from "./views/Introduction.vue";
@@ -21,6 +23,7 @@ import Art from "./views/Art.vue";
 
 Vue.use(VueRouter);
 Vue.use(VueLazyload);
+Vue.use(Vuetify);
 
 const routes: any = [
     {
@@ -33,7 +36,7 @@ const routes: any = [
     },
     {
         path: "/art",
-        component: ComingSoon
+        component: Art
     },
     {
         path: "/art/:artCategory",

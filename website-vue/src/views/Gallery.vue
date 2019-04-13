@@ -62,46 +62,57 @@ export default class Gallery extends Vue {
         switch (this.artCategory) {
             case "temples": {
                 art = this.artModelValue[ArtEnum.Temples];
+
                 break;
             }
             case "miscellaneous": {
                 art = this.artModelValue[ArtEnum.Miscellaneous];
+
                 break;
             }
             case "tekken_fan_art": {
                 art = this.artModelValue[ArtEnum.TekkenFanArt];
+
                 break;
             }
             case "panic_attack_3d_model": {
                 art = this.artModelValue[ArtEnum.PanicAttack];
+
                 break;
             }
             case "mass_effect_fan_art": {
                 art = this.artModelValue[ArtEnum.MassEffect];
+
                 break;
             }
             case "concept_art": {
                 art = this.artModelValue[ArtEnum.ConceptArt];
+
                 break;
             }
             case "resident_evil_fan_art": {
                 art = this.artModelValue[ArtEnum.ResidentEvil];
+
                 break;
             }
             case "toys": {
                 art = this.artModelValue[ArtEnum.Toys];
+
                 break;
             }
             case "hammer_troll": {
                 art = this.artModelValue[ArtEnum.HammerTroll];
+
                 break;
             }
             case "wrestling_concepts": {
                 art = this.artModelValue[ArtEnum.WrestlingConcepts];
+
                 break;
             }
             default: {
                 art = this.artModelValue[ArtEnum.Temples];
+
                 break;
             }
         }
