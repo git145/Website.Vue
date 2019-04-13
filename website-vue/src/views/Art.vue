@@ -1,18 +1,18 @@
 <template>
-    <v-container id="top">
+    <v-container id="top" grid-list-xl>
         <v-layout justify-center>
             <h2>Art</h2>
         </v-layout>
 
-        <v-layout>
-            <v-flex xs12 sm6 offset-sm3>
-                <v-card v-for="artItem in art" :key="artItem.id" class="page__card" dark>
+        <v-layout row wrap>
+            <v-flex xs4 v-for="artItem in art" :key="artItem.id">
+                <v-card dark>
                     <v-img
                         :src="require(`@/assets/img/${ artItem.directory }/${ artItem.images[0].file }`)"
                         aspect-ratio="2.75"
                     ></v-img>
 
-                    <v-card-title primary-title>
+                    <v-card-title>
                         <div>
                             <h3 class="headline mb-0">{{ artItem.title }}</h3>
                         </div>

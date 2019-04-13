@@ -1,31 +1,51 @@
 <template>
-    <div class="page" id="top" v-if="hasArt">
-        <h2>{{ artTitle }}</h2>
+    <v-container v-if="hasArt" grid-list-xl>
+        <v-layout justify-center>
+            <h2>{{ artTitle }}</h2>
+        </v-layout>
 
-        <section v-for="image in artImages" :key="image.id" class="gallery__section">
-            <a
-                :href="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
-                class="gallery__link"
-            >
-                <img
-                    v-lazy="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
-                    :alt="image.name"
-                    :title="image.name"
-                    class="gallery__image"
-                >
-            </a>
+        <v-layout row wrap>
+            <v-flex xs12>
+                <v-carousel>
+                    <v-carousel-item
+                        v-for="image in artImages"
+                        :key="image.id"
+                        :src="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
+                    ></v-carousel-item>
+                </v-carousel>
+            </v-flex>
 
-            <h3>
-                <a
-                    :href="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
-                >{{ image.name }}</a>
-            </h3>
-        </section>
+            <v-flex xs4 v-for="image in artImages" :key="image.id">
+                <v-card dark>
+                    <v-img
+                        :src="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
+                        aspect-ratio="2.75"
+                    ></v-img>
 
-        <h4>
-            <a href="#top" title="Return to the top of the page">Return to the top</a>
-        </h4>
-    </div>
+                    <v-card-title>
+                        <div>
+                            <h3 class="headline mb-0">{{ image.name }}</h3>
+                        </div>
+                    </v-card-title>
+
+                    <v-card-actions>
+                        <v-btn
+                            flat
+                            color="orange"
+                            :href="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
+                            target="_blank"
+                        >Explore</v-btn>
+                    </v-card-actions>
+                </v-card>
+            </v-flex>
+        </v-layout>
+
+        <v-layout justify-end>
+            <h4>
+                <a href="#top" title="Return to the top of the page">Return to the top</a>
+            </h4>
+        </v-layout>
+    </v-container>
 </template>
 
 <script lang='ts'>

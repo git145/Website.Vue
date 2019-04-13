@@ -45,7 +45,7 @@ const routes: any = [
     },
     {
         path: "/games",
-        component: ComingSoon
+        component: Games
     },
     {
         path: "/games/tip_the_crates",
