@@ -3,8 +3,6 @@
         <site-header/>
 
         <div class="content">
-            <navigation/>
-
             <main>
                 <router-view :key="$route.fullPath"/>
             </main>
@@ -15,25 +13,20 @@
 </template>
 
 <script lang="ts">
-    import { Vue, Component, Provide } from "vue-property-decorator";
+import { Vue, Component, Provide } from "vue-property-decorator";
 
-    import SiteHeader from "./components/SiteHeader.vue";
-    import Navigation from "./components/Navigation.vue";
-    import SiteFooter from "./components/SiteFooter.vue";
+import SiteHeader from "./components/SiteHeader.vue";
+import SiteFooter from "./components/SiteFooter.vue";
 
-    @Component(
-        {
-            components: {
-                SiteHeader,
-                Navigation,
-                SiteFooter
-            }
-        }
-    )
-    export default class App extends Vue {
+@Component({
+    components: {
+        SiteHeader,
+        SiteFooter
     }
+})
+export default class App extends Vue {}
 </script>
 
 <style lang="scss">
-    @import "./assets/scss/default/styles";
+@import "./assets/scss/default/styles";
 </style>

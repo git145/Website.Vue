@@ -1,0 +1,110 @@
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15.625rem;
+    display: flex;
+    flex-direction: column;
+
+    &__icon-wrapper {
+        height: 4.0625rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: .6rem;
+    }
+
+    &__icon {
+        fill: $white;
+        width: 1.875rem;
+        height: 1.875rem;
+        cursor: pointer;
+    }
+
+    &__box {
+        background-color: $black;
+        flex: 1;
+        display: none;
+
+        &--show {
+            display: flex;
+            flex: 1;
+        }
+    }
+
+    &__list {
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        flex: 1;
+        margin-top: 0;
+        margin-bottom: 0;
+        flex-direction: column;
+    }
+
+    &__link {
+        min-height: 2.5rem;
+        flex: 1;
+        display: flex;
+    }
+}
+
+.nav__router-link {
+    flex: 1;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:active,
+    &:visited,
+    &:link  {
+        color: $white;
+    }
+
+    &:hover {
+        color: $grey;
+    }
+}
+
+.nav__router-link.router-link-active {
+    background-color: $white;
+    color: $black;
+
+    &:active,
+    &:visited,
+    &:link  {
+        color: $black;
+    }
+
+    &:hover {
+        color: $grey;
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    .nav {
+        position: static;
+        width: auto;
+        flex-direction: row;
+        flex: 3;
+
+        &__icon-wrapper {
+            display: none;
+        }
+
+        &__box {
+            display: flex;
+        }
+
+        &__list {
+            flex-direction: row;
+        }
+
+        &__link {
+            max-width: 9.375rem;
+        }
+    }
+}

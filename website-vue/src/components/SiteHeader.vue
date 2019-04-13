@@ -1,18 +1,24 @@
 <template>
-    <header>
-        <h1>
-            RichardKneale@AlterVista.org
-        </h1>
+    <header class="header">
+        <div class="header__heading-wrapper">
+            <h1 class="header__heading">
+                <router-link to="/" class="header__link">RichardKneale@AlterVista.org</router-link>
+            </h1>
+        </div>
+
+        <navigation/>
     </header>
 </template>
 
 <script lang='ts'>
-    import { Vue, Component } from "vue-property-decorator";
+import { Vue, Component } from "vue-property-decorator";
 
-    @Component(
-        {
-        }
-    )
-    export default class SiteHeader extends Vue {
+import Navigation from "../components/Navigation.vue";
+
+@Component({
+    components: {
+        Navigation
     }
+})
+export default class SiteHeader extends Vue {}
 </script>

@@ -30,3 +30,24 @@ h4 {
 .align-center {
     align-self: center;
 }
+
+p {
+    line-height: 1.875rem;
+}
+
+a {
+    color: $red-brown;
+
+    &:link {
+        color: $red-brown;
+    }
+
+    &:visited,
+    &:active {
+        color: $orange;
+    }
+
+    &:hover {
+        color: $grey;
+    }
+}

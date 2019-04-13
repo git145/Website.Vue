@@ -1,3 +1,3 @@
 <template>
-    <router-view :key="$route.fullPath"/>
+    <h3>Arduino</h3>
 </template>

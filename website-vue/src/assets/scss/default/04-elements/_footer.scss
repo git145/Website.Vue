@@ -1,11 +1,11 @@
 .footer {
-    background-color: $gunmetal;
     display: flex;
-    padding: .625rem .75rem;
-    color: $grey;
+    flex-direction: column;
 
     &__link-wrapper {
         flex: 1;
+        background-color: $black;
+        padding: .625rem 1.25rem;
     }
 
     &__list {
@@ -18,12 +18,13 @@
 
     &__item {
         margin-right: 1rem;
+        width: 2.5rem;
         height: 2.5rem;
         display: inline-block;
     }
 
     &__link {
-        display: block;
+        width: 2.5rem;
         height: 2.5rem;
         display: inline-block;
     }
@@ -36,10 +37,28 @@
         flex: 1;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
+        background-color: $grey;
+        color: $black;
+        padding: .625rem 1.25rem;
     }
 
     &__copyright {
         font-weight: bold;
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    .footer {
+        flex-direction: row;
+
+        &__copyright-wrapper {
+            background-color: $black;
+            justify-content: flex-end;
+        }
+
+        &__copyright {
+            color: $white;
+        }
     }
 }

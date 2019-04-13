@@ -1,13 +1,8 @@
 <template>
     <div class="page">
-        <h2>
-            Introduction
-        </h2>
+        <h2>Introduction</h2>
 
-        <img v-lazy="require('@/assets/img/me.png')"
-            alt="Me"
-            title="Me"
-            class="page__image">
+        <img v-lazy="require('@/assets/img/me.png')" alt="Me" title="Me" class="page__image">
 
         <p>
             Welcome to my website. The website serves as my portfolio, and contains examples of work related to
@@ -16,16 +11,13 @@
             designs, games, 3D models, Arduino projects, and music. I will add to the site as I produce more work.
             You are welcome to contact me with professional enquiries through LinkedIn, Coroflot, Hiive, or by
             email.
-
-            <a href="mailto:richardkneale@hotmail.co.uk"
-                target="_top">
-                My CV is available on request.
-            </a>
+            <a
+                href="mailto:richardkneale@hotmail.co.uk"
+                target="_top"
+            >My CV is available on request.</a>
         </p>
 
-        <h3>
-            Profile
-        </h3>
+        <h3>Profile</h3>
 
         <p>
             I am a hard-working and approachable individual. In my free time I like to complete self-directed
@@ -41,70 +33,56 @@
             as professional wrestling.
         </p>
 
-        <h3>
-            Key Skills
-        </h3>
+        <h3>Key Skills</h3>
 
         <ul>
-            <li>
-                Degrees in Computer Science (MSc) and Mechanical Engineering (MEng).
-            </li>
+            <li
+                class="page__list-item"
+            >Degrees in Computer Science (MSc) and Mechanical Engineering (MEng).</li>
 
-            <li>
-                Programming in Arduino, C#, CSS, HTML5, Java, JavaScript, MATLAB, PHP, Python, RAPID and Sass.
-            </li>
+            <li
+                class="page__list-item"
+            >Programming in Arduino, C#, CSS, HTML5, Java, JavaScript, MATLAB, PHP, Python, RAPID and Sass.</li>
 
-            <li>
-                Experience implementing an interface, in relation to user experience.
-            </li>
+            <li
+                class="page__list-item"
+            >Experience implementing an interface, in relation to user experience.</li>
 
-            <li>
-                Knowledge of OWL, RDF, SPARQL, and XML in relation to the semantic web.
-            </li>
+            <li
+                class="page__list-item"
+            >Knowledge of OWL, RDF, SPARQL, and XML in relation to the semantic web.</li>
 
-            <li>
-                Knowledge of the model-view-controller architecture.
-            </li>
+            <li class="page__list-item">Knowledge of the model-view-controller architecture.</li>
 
-            <li>
-                Experience of content management systems, including Drupal and WordPress.
-            </li>
+            <li
+                class="page__list-item"
+            >Experience of content management systems, including Drupal and WordPress.</li>
 
-            <li>
-                Database design using the relational model, and implementation with MySQL.
-            </li>
+            <li
+                class="page__list-item"
+            >Database design using the relational model, and implementation with MySQL.</li>
 
-            <li>
-                Knowledge of Git.
-            </li>
+            <li class="page__list-item">Knowledge of Git.</li>
 
-            <li>
-                Graphic illustration, using graphics editors including Fireworks, PaintTool SAI, and Photoshop.
-            </li>
+            <li
+                class="page__list-item"
+            >Graphic illustration, using graphics editors including Fireworks, PaintTool SAI, and Photoshop.</li>
 
-            <li>
-                Knowledge of Web Content Accessibility Guidelines.
-            </li>
+            <li class="page__list-item">Knowledge of Web Content Accessibility Guidelines.</li>
 
-            <li>
-                Experience developing applications using Android Studio, Eclipse, Notepad++, and Unity.
-            </li>
+            <li
+                class="page__list-item"
+            >Experience developing applications using Android Studio, Eclipse, Notepad++, and Unity.</li>
 
-            <li>
-                Knowledge of continuous improvement, kanban, and test-driven development.
-            </li>
+            <li
+                class="page__list-item"
+            >Knowledge of continuous improvement, kanban, and test-driven development.</li>
 
-            <li>
-                Experience programming for artificial intelligence.
-            </li>
+            <li class="page__list-item">Experience programming for artificial intelligence.</li>
 
-            <li>
-                Experience leading a design project.
-            </li>
+            <li class="page__list-item">Experience leading a design project.</li>
 
-            <li>
-                Excellent mathematical ability and written English.
-            </li>
+            <li class="page__list-item">Excellent mathematical ability and written English.</li>
         </ul>
     </div>
 </template>

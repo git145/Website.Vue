@@ -6,7 +6,7 @@ import store from "./store";
 
 /* VIEWS */
 import Introduction from "./views/Introduction.vue";
-import Art from "./views/Art.vue";
+import Gallery from "./views/Gallery.vue";
 import Games from "./views/Games.vue";
 import TipTheCrates from "./views/games/TipTheCrates.vue";
 import ZombieBattle from "./views/games/ZombieBattle.vue";
@@ -17,6 +17,7 @@ import HeatedCutlery from "./views/other_projects/HeatedCutlery.vue";
 import ComingSoon from "./views/ComingSoon.vue";
 import NotFound from "./views/NotFound.vue";
 import TrafficLights from "./views/arduino/TrafficLights.vue";
+import Art from "./views/Art.vue";
 
 Vue.use(VueRouter);
 Vue.use(VueLazyload);
@@ -31,51 +32,45 @@ const routes: any = [
         component: Introduction
     },
     {
+        path: "/art",
+        component: ComingSoon
+    },
+    {
         path: "/art/:artCategory",
-        component: Art,
+        component: Gallery,
         props: true
     },
     {
         path: "/games",
-        component: Games,
-        children: [
-            {
-                path: "tip_the_crates",
-                component: TipTheCrates
-            },
-            {
-                path: "zombie_battle",
-                component: ZombieBattle
-            }
-        ]
+        component: ComingSoon
+    },
+    {
+        path: "/games/tip_the_crates",
+        component: TipTheCrates
+    },
+    {
+        path: "/games/zombie_battle",
+        component: ZombieBattle
     },
     {
         path: "/music",
-        component: Music
+        component: ComingSoon
     },
     {
         path: "/arduino",
-        component: Arduino,
-        children: [
-            {
-                path: "traffic_lights",
-                component: TrafficLights
-            }
-        ]
+        component: ComingSoon
+    },
+    {
+        path: "/arduino/traffic_lights",
+        component: TrafficLights
     },
     {
         path: "/other_projects",
-        component: OtherProjects,
-        children: [
-            {
-                path: "heated_cutlery",
-                component: HeatedCutlery
-            }
-        ]
+        component: ComingSoon
     },
     {
-        path: "/coming_soon",
-        component: ComingSoon
+        path: "/other_projects/heated_cutlery",
+        component: HeatedCutlery
     },
     {
         path: "*",

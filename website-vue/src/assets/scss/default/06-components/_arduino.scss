@@ -1,10 +1,12 @@
 .arduino {
     &__youtube {
-        margin-bottom: 1.25rem;
+        margin-bottom: 1.875rem;
     }
 
     &__image {
-        margin-bottom: 1.25rem;
-        width: 90%;
+        margin-bottom: 1.875rem;
+        width: 100%;
+        max-width: 50rem;
+        align-self: center;
     }
 }
