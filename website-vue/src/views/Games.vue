@@ -5,40 +5,21 @@
         </v-layout>
 
         <v-layout row wrap>
-            <v-flex xs12 sm6 offset-xs3>
+            <v-flex xs12 sm6 offset-xs3 v-for="gamesItem in games" :key="gamesItem.id">
                 <v-card dark>
                     <v-img
-                        :src="require('@/assets/img/games/tip_the_crates.png')"
+                        :src="require(`@/assets/img${ gamesItem.imageFile }`)"
                         aspect-ratio="2.75"
                     ></v-img>
 
                     <v-card-title>
                         <div>
-                            <h3 class="headline mb-0">Tip the Crates</h3>
+                            <h3 class="headline mb-0">{{ gamesItem.name }}</h3>
                         </div>
                     </v-card-title>
 
                     <v-card-actions>
-                        <v-btn flat color="orange" href="/#/games/tip_the_crates">Explore</v-btn>
-                    </v-card-actions>
-                </v-card>
-            </v-flex>
-
-            <v-flex xs12 sm6 offset-xs3>
-                <v-card dark>
-                    <v-img
-                        :src="require('@/assets/img/games/zombie_battle.png')"
-                        aspect-ratio="2.75"
-                    ></v-img>
-
-                    <v-card-title>
-                        <div>
-                            <h3 class="headline mb-0">Zombie Battle</h3>
-                        </div>
-                    </v-card-title>
-
-                    <v-card-actions>
-                        <v-btn flat color="orange" href="/#/games/zombie_battle">Explore</v-btn>
+                        <v-btn flat color="orange" :href="`/#${ gamesItem.url }`">Explore</v-btn>
                     </v-card-actions>
                 </v-card>
             </v-flex>
@@ -53,8 +34,19 @@
 </template>
 
 <script lang='ts'>
-import { Vue, Component } from "vue-property-decorator";
+import { Vue, Component, Provide, Prop } from "vue-property-decorator";
+
+import ArtModel from "../models/ArtModel";
+import IArt from "../interfaces/IArt";
+import IImage from "../interfaces/IImage";
+import { ArtEnum } from "../enums/ArtEnum";
+import GamesModel from "@/models/GamesModel";
+import ILink from "@/interfaces/ILink";
 
 @Component({})
-export default class Games extends Vue {}
+export default class Games extends Vue {
+    private gamesModel: GamesModel = new GamesModel();
+
+    @Provide() private games: ILink[] = this.gamesModel.games;
+}
 </script>
