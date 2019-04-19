@@ -1,24 +1,26 @@
 <template>
     <footer class="footer">
-        <div class="footer__link-wrapper">
-            <ul class="footer__list">
-                <li v-for="link in links" :key="link.id" class="footer__item">
-                    <a :href="link.url" :target="link.target" class="footer__link">
-                        <img
-                            :src="require(`@/assets/img/links/${ link.imageFile }`)"
-                            :alt="link.name"
-                            :title="link.name"
-                            class="footer__icon"
-                        >
+        <div class="footer__wrapper">
+            <div class="footer__link-wrapper">
+                <ul class="footer__list">
+                    <li v-for="link in links" :key="link.id" class="footer__item">
+                        <a :href="link.url" :target="link.target" class="footer__link">
+                            <img
+                                :src="require(`@/assets/img/links/${ link.imageFile }`)"
+                                :alt="link.name"
+                                :title="link.name"
+                                class="footer__icon"
+                            >
 
-                        <span class="footer__name">{{ link.name }}</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+                            <span class="footer__name">{{ link.name }}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="footer__copyright-wrapper">
-            <div class="footer__copyright">&copy; Richard Kneale {{ getYear() }}</div>
+            <div class="footer__copyright-wrapper">
+                <div class="footer__copyright">&copy; Richard Kneale {{ getYear() }}</div>
+            </div>
         </div>
     </footer>
 </template>

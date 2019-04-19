@@ -15,7 +15,7 @@
                 </v-carousel>
             </v-flex>
 
-            <v-flex xs4 v-for="image in artImages" :key="image.id">
+            <v-flex xs6 v-for="image in artImages" :key="image.id">
                 <v-card dark>
                     <v-img
                         :src="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
@@ -68,8 +68,8 @@ export default class Gallery extends Vue {
     private artModel: ArtModel = new ArtModel();
     private artModelValue = this.artModel.art;
 
-    @Provide() artTitle: string = '';
-    @Provide() artDirectory: string = '';
+    @Provide() artTitle: string = "";
+    @Provide() artDirectory: string = "";
     @Provide() artImages: IImage[] = [];
 
     mounted() {

@@ -2,6 +2,13 @@
     background-color: $black;
     border-bottom: .625rem solid $orange;
     display: flex;
+    justify-content: center;
+
+    &__wrapper {
+        display: flex;
+        flex: 1;
+        max-width: $max-width;
+    }
 
     &__heading-wrapper {
         padding: 1.125rem 1.25rem;

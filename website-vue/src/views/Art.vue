@@ -5,7 +5,7 @@
         </v-layout>
 
         <v-layout row wrap>
-            <v-flex xs4 v-for="artItem in art" :key="artItem.id">
+            <v-flex xs6 v-for="artItem in art" :key="artItem.id">
                 <v-card dark>
                     <v-img
                         :src="require(`@/assets/img/${ artItem.directory }/${ artItem.images[0].file }`)"
