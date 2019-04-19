@@ -61,15 +61,15 @@ export default class Gallery extends Vue {
     @Prop({
         default: "temples"
     })
-    artCategory: string;
+    artCategory?: string;
 
     @Provide() private hasArt = false;
 
     private artModel: ArtModel = new ArtModel();
     private artModelValue = this.artModel.art;
 
-    @Provide() artTitle: string;
-    @Provide() artDirectory: string;
+    @Provide() artTitle: string = '';
+    @Provide() artDirectory: string = '';
     @Provide() artImages: IImage[] = [];
 
     mounted() {
