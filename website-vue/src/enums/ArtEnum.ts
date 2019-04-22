@@ -2,7 +2,7 @@ export enum ArtEnum {
     Temples,
     Miscellaneous,
     TekkenFanArt,
-    PanicAttack,
+    ThreeD,
     MassEffect,
     ConceptArt,
     ResidentEvil,
