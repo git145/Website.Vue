@@ -100,9 +100,7 @@
         </v-layout>
 
         <v-layout justify-end>
-            <h4>
-                <a href="#top" title="Return to the top of the page">Return to the top</a>
-            </h4>
+            <a href="#top" title="Return to the top of the page">Return to the top</a>
         </v-layout>
     </v-container>
 </template>

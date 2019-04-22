@@ -51,7 +51,7 @@ export default new VueRouter({
         },
         {
             path: "/music",
-            component: ComingSoon
+            component: Music
         },
         {
             path: "/arduino",
