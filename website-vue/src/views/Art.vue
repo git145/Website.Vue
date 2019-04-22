@@ -10,6 +10,8 @@
                     <v-img
                         :src="require(`@/assets/img/${ artItem.directory }/${ artItem.images[0].file }`)"
                         aspect-ratio="2.75"
+                        :title="artItem.name"
+                        :alt="artItem.name"
                     ></v-img>
 
                     <v-card-title>
@@ -26,7 +28,7 @@
         </v-layout>
 
         <v-layout justify-end>
-            <a href="#top" title="Return to the top of the page">Return to the top</a>
+            <a href="#top" title="Return to the top of the page">Return to top</a>
         </v-layout>
     </v-container>
 </template>

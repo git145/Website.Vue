@@ -4,7 +4,9 @@
 
         <div class="content">
             <main>
-                <router-view :key="$route.fullPath"/>
+                <transition>
+                    <router-view :key="$route.fullPath"/>
+                </transition>
             </main>
         </div>
 

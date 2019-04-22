@@ -9,7 +9,7 @@ h1 {
     margin-top: 0;
     margin-bottom: 0;
     color: $grey-light;
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
 }
 
 h2 {
@@ -40,5 +40,11 @@ a {
 
     &:hover {
         color: $grey-light;
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    h1 {
+        font-size: 1.5rem;
     }
 }

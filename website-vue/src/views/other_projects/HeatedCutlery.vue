@@ -18,6 +18,8 @@
                             v-for="image in artModel.images"
                             :key="image.id"
                             :src="require(`@/assets/img/${ artModel.directory }/${ image.file }`)"
+                            :title="image.name"
+                            :alt="image.name"
                         ></v-carousel-item>
                     </v-carousel>
                 </v-flex>
@@ -27,6 +29,8 @@
                         <v-img
                             :src="require(`@/assets/img/${ artModel.directory }/${ image.file }`)"
                             aspect-ratio="2.75"
+                            :title="image.name"
+                            :alt="image.name"
                         ></v-img>
 
                         <v-card-title>
@@ -50,7 +54,7 @@
 
         <v-container>
             <v-layout justify-end>
-                <a href="#top" title="Return to the top of the page">Return to the top</a>
+                <a href="#top" title="Return to the top of the page">Return to top</a>
             </v-layout>
         </v-container>
     </div>

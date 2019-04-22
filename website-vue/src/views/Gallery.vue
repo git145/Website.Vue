@@ -11,6 +11,8 @@
                         v-for="image in artImages"
                         :key="image.id"
                         :src="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
+                        :title="image.name"
+                        :alt="image.name"
                     ></v-carousel-item>
                 </v-carousel>
             </v-flex>
@@ -20,6 +22,8 @@
                     <v-img
                         :src="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
                         aspect-ratio="2.75"
+                        :title="image.name"
+                        :alt="image.name"
                     ></v-img>
 
                     <v-card-title>
@@ -41,7 +45,7 @@
         </v-layout>
 
         <v-layout justify-end>
-            <a href="#top" title="Return to the top of the page">Return to the top</a>
+            <a href="#top" title="Return to top">Return to top</a>
         </v-layout>
     </v-container>
 </template>
@@ -93,8 +97,8 @@ export default class Gallery extends Vue {
 
                 break;
             }
-            case "panic_attack_3d_model": {
-                art = this.artModelValue[ArtEnum.PanicAttack];
+            case "three_d": {
+                art = this.artModelValue[ArtEnum.ThreeD];
 
                 break;
             }

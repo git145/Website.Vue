@@ -157,9 +157,13 @@ export default class ArtModel {
             ]
         },
         {
-            title: "Panic Attack 3D Model",
-            directory: "panic_attack",
+            title: "3D",
+            directory: "three_d",
             images: [
+                {
+                    name: "Wild West Ranch",
+                    file: "wild_west_ranch.png"
+                },
                 {
                     name: "Panic Attack 3D Model",
                     file: "panic_attack.png"

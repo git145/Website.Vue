@@ -21,7 +21,7 @@
                     <a
                         :href="require('@/assets/music/daydream.mp3')"
                         download
-                        title="Link to download the mp3"
+                        title="A link to download the mp3"
                     >download the mp3</a>
                     )
                 </p>
@@ -45,7 +45,7 @@
                     <a
                         :href="require('@/assets/music/feel_it.mp3')"
                         download
-                        title="Link to download the mp3"
+                        title="A link to download the mp3"
                     >download the mp3</a>
                     )
                 </p>
@@ -53,7 +53,7 @@
         </v-layout>
 
         <v-layout justify-end>
-            <a href="#top" title="Return to the top of the page">Return to the top</a>
+            <a href="#top" title="Return to the top of the page">Return to top</a>
         </v-layout>
     </v-container>
 </template>

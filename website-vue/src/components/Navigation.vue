@@ -15,28 +15,12 @@
 
         <div class="nav__box" :class="{ 'nav__box--show': isLinks }">
             <ul class="nav__list nav__list--one">
-                <li class="nav__link">
-                    <router-link to="/introduction" class="nav__router-link">Introduction</router-link>
-                </li>
-
-                <li class="nav__link">
-                    <router-link to="/art" class="nav__router-link">Art</router-link>
-                </li>
-
-                <li class="nav__link">
-                    <router-link to="/games" class="nav__router-link">Games</router-link>
-                </li>
-
-                <li class="nav__link">
-                    <router-link to="/music" class="nav__router-link">Music</router-link>
-                </li>
-
-                <li class="nav__link">
-                    <router-link to="/arduino" class="nav__router-link">Arduino</router-link>
-                </li>
-
-                <li class="nav__link">
-                    <router-link to="/other_projects" class="nav__router-link">Other Projects</router-link>
+                <li class="nav__link" v-for="link in navigation" :key="link.id">
+                    <router-link
+                        :to="link.url"
+                        class="nav__router-link"
+                        :title="link.name"
+                    >{{ link.name }}</router-link>
                 </li>
             </ul>
         </div>
@@ -46,9 +30,16 @@
 <script lang='ts'>
 import { Vue, Component, Provide } from "vue-property-decorator";
 
+import NavigationModel from "../models/NavigationModel";
+import ILink from "../interfaces/ILink";
+
 @Component({})
 export default class Navigation extends Vue {
     @Provide() private isLinks: boolean = false;
+
+    private navigationModel: NavigationModel = new NavigationModel();
+
+    @Provide() private navigation: ILink[] = this.navigationModel.navigation;
 
     private showLinks(): void {
         this.isLinks = this.isLinks ? false : true;
