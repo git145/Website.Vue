@@ -23,7 +23,7 @@
             </p>
         </v-layout>
 
-        <v-layout justify-start>
+        <v-layout>
             <a
                 href="https://play.google.com/store/apps/details?id=com.tipthecrate.tipthecrate"
                 title="A link to &quot;Tip the Crates&quot;"

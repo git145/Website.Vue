@@ -55,7 +55,7 @@ export default new VueRouter({
         },
         {
             path: "/arduino",
-            component: ComingSoon
+            redirect: "/arduino/traffic_lights"
         },
         {
             path: "/arduino/traffic_lights",
@@ -63,7 +63,7 @@ export default new VueRouter({
         },
         {
             path: "/other_projects",
-            component: ComingSoon
+            redirect: "/other_projects/heated_cutlery"
         },
         {
             path: "/other_projects/heated_cutlery",

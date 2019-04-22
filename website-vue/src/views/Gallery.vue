@@ -6,7 +6,7 @@
 
         <v-layout row wrap>
             <v-flex xs12>
-                <v-carousel>
+                <v-carousel light>
                     <v-carousel-item
                         v-for="image in artImages"
                         :key="image.id"
