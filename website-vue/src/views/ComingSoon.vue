@@ -1,7 +1,7 @@
 <template>
-    <div class="page">
-        <h2>
-            Coming Soon
-        </h2>
-    </div>
+    <v-container>
+        <v-layout justify-center>
+            <h2>Coming Soon</h2>
+        </v-layout>
+    </v-container>
 </template>

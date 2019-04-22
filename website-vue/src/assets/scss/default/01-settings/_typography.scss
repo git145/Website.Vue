@@ -2,28 +2,49 @@
 
 $font-family: $open-sans;
 $font-color: $black;
-$gloria-hallelujah: 'Gloria Hallelujah', cursive;
+$gloria-hallelujah: 'Gloria Hallelujah',
+cursive;
 
 h1 {
     margin-top: 0;
     margin-bottom: 0;
-    color: $white;
-    font-size: 1rem;
-    font-weight: normal;
+    color: $grey-light;
+    font-size: 1.25rem;
 }
 
-h2, h3, h4 {
-    display: inline;
+h2 {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
 }
 
-h2, h3 {
-    align-self: center;
+h3 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
-h4 {
-    align-self: flex-end;
+p {
+    line-height: 1.875rem;
 }
 
-.align-center {
-    align-self: center;
+a {
+    color: $red-brown;
+
+    &:link {
+        color: $red-brown;
+    }
+
+    &:visited,
+    &:active {
+        color: $orange;
+    }
+
+    &:hover {
+        color: $grey-light;
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    h1 {
+        font-size: 1.5rem;
+    }
 }
