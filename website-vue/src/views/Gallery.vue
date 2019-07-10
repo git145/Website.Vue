@@ -92,7 +92,7 @@ export default class Gallery extends Vue {
 
                 break;
             }
-            case "tekken_fan_art": {
+            case "tekken": {
                 art = this.artModelValue[ArtEnum.TekkenFanArt];
 
                 break;
@@ -102,17 +102,17 @@ export default class Gallery extends Vue {
 
                 break;
             }
-            case "mass_effect_fan_art": {
+            case "mass_effect": {
                 art = this.artModelValue[ArtEnum.MassEffect];
 
                 break;
             }
-            case "concept_art": {
+            case "concepts": {
                 art = this.artModelValue[ArtEnum.ConceptArt];
 
                 break;
             }
-            case "resident_evil_fan_art": {
+            case "resident_evil": {
                 art = this.artModelValue[ArtEnum.ResidentEvil];
 
                 break;
@@ -127,7 +127,7 @@ export default class Gallery extends Vue {
 
                 break;
             }
-            case "wrestling_concepts": {
+            case "wrestling": {
                 art = this.artModelValue[ArtEnum.WrestlingConcepts];
 
                 break;

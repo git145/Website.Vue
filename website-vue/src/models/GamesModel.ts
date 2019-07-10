@@ -4,13 +4,13 @@ export default class GamesModel {
     public games: ILink[] = [
         {
             name: 'Tip the Crates',
-            url: '/games/tip_the_crates',
-            imageFile: '/games/tip_the_crates.png'
+            url: 'tip_the_crates',
+            imageFile: 'tip_the_crates.png'
         },
         {
             name: 'Zombie Battle',
-            url: '/games/zombie_battle',
-            imageFile: '/games/zombie_battle.png'
+            url: 'zombie_battle',
+            imageFile: 'zombie_battle.png'
         }
     ]
 }

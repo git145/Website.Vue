@@ -8,7 +8,7 @@
             <v-flex xs12 sm6 offset-xs3 v-for="gamesItem in games" :key="gamesItem.id">
                 <v-card dark>
                     <v-img
-                        :src="require(`@/assets/img${ gamesItem.imageFile }`)"
+                        :src="require(`@/assets/img/games/${ gamesItem.imageFile }`)"
                         aspect-ratio="2.75"
                     ></v-img>
 
@@ -19,7 +19,7 @@
                     </v-card-title>
 
                     <v-card-actions>
-                        <v-btn flat color="orange" :href="`/#${ gamesItem.url }`">Explore</v-btn>
+                        <v-btn flat color="orange" :href="`/#/games/${ gamesItem.url }`">Explore</v-btn>
                     </v-card-actions>
                 </v-card>
             </v-flex>
