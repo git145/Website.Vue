@@ -6,8 +6,8 @@
                     <router-link
                         to="/"
                         class="header__link"
-                        title="RichardKneale@AlterVista.org"
-                    >RichardKneale@AlterVista.org</router-link>
+                        title="git145"
+                    >git145</router-link>
                 </h1>
             </div>
 
