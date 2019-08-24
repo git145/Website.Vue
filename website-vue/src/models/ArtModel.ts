@@ -205,6 +205,20 @@ export default class ArtModel {
             ]
         },
         {
+            title: "Traditional Art",
+            directory: "traditional",
+            images: [
+                {
+                    name: "The Jungle",
+                    file: "jungle.jpeg"
+                },
+                {
+                    name: "Mountains",
+                    file: "mountains.jpg"
+                }
+            ]
+        },
+        {
             title: "Concept Art",
             directory: "concepts",
             images: [

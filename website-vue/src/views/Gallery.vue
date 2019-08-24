@@ -107,6 +107,11 @@ export default class Gallery extends Vue {
 
                 break;
             }
+            case "traditional": {
+                art = this.artModelValue[ArtEnum.Traditional];
+
+                break;
+            }
             case "concepts": {
                 art = this.artModelValue[ArtEnum.ConceptArt];
 
