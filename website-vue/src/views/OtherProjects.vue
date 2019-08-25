@@ -1,7 +1,5 @@
 <template>
-    <v-container>
-        <v-layout justify-center>
-            <h2>Other Projects</h2>
-        </v-layout>
-    </v-container>
+    <div id="top" class="page">
+        <h2>Other Projects</h2>
+    </div>
 </template>

@@ -1,28 +1,28 @@
 <template>
-    <div id="top" class="page music">
+    <div id="top" class="page">
         <h2>Music</h2>
 
-        <section class="music__video-wrapper">
+        <section v-for="musicItem in music" :key="musicItem.id" class="page__section">
             <iframe
-                src="https://www.youtube.com/embed/Qd9P51-aWJk"
+                :src="musicItem.url"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
-                title="The video for &quot;Daydream&quot;"
+                :title="`The video for &quot;${musicItem.name}&quot;`"
                 class="youtube"
             ></iframe>
 
-            <h3>
-                Daydream (
+            <h3 class="page__title--center">
+                {{ musicItem.name }} (
                 <a
-                    :href="require('@/assets/music/daydream.mp3')"
+                    :href="require(`@/assets/music/${musicItem.audioFile}`)"
                     download
-                    title="A link to download the mp3"
-                >download the mp3</a>
+                    title="A link to download the file"
+                >download</a>
                 )
             </h3>
         </section>
 
-        <section class="music__video-wrapper">
+        <!--<section class="music__video-wrapper">
             <iframe
                 src="https://www.youtube.com/embed/fhG2QQ0aAac"
                 allowfullscreen
@@ -37,11 +37,25 @@
                     :href="require('@/assets/music/feel_it.mp3')"
                     download
                     title="A link to download the mp3"
-                >download the mp3</a>
+                >download</a>
                 )
             </h3>
-        </section>
+        </section>-->
 
-        <a href="#top" title="Return to the top of the page" class="page__link">Return to top</a>
+        <a href="#top" title="Return to the top of the page" class="page__link">Return to the top</a>
     </div>
 </template>
+
+<script lang='ts'>
+import { Vue, Component, Provide, Prop } from "vue-property-decorator";
+
+import MusicModel from "../models/MusicModel";
+import ILink from "@/interfaces/ILink";
+
+@Component({})
+export default class Music extends Vue {
+    private musicModel: MusicModel = new MusicModel();
+
+    @Provide() private music: ILink[] = this.musicModel.music;
+}
+</script>

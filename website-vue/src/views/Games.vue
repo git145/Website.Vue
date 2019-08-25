@@ -1,10 +1,28 @@
 <template>
-    <v-container grid-list-xl>
-        <v-layout justify-center>
-            <h2>Games</h2>
-        </v-layout>
+    <div id="top" class="page">
+        <h2>Games</h2>
 
-        <v-layout row wrap>
+        <section v-for="gamesItem in games" :key="gamesItem.id" class="page__section">
+            <a :href="`/#/games/${ gamesItem.url }`" class="page__image-wrapper">
+                <img
+                    v-lazy="require(`@/assets/img/games/${ gamesItem.imageFile }`)"
+                    :alt="gamesItem.name"
+                    :title="gamesItem.name"
+                    class="page__image"
+                />
+            </a>
+
+            <h3 class="page__title--center">
+                {{ gamesItem.name }} (
+                <a
+                    :href="`/#/games/${ gamesItem.url }`"
+                    title="A link to the category"
+                >view</a>
+                )
+            </h3>
+        </section>
+
+        <!--<v-layout row wrap>
             <v-flex xs12 sm6 offset-xs3 v-for="gamesItem in games" :key="gamesItem.id">
                 <v-card dark>
                     <v-img
@@ -23,12 +41,10 @@
                     </v-card-actions>
                 </v-card>
             </v-flex>
-        </v-layout>
+        </v-layout>-->
 
-        <v-layout justify-end>
-            <a href="#top" title="Return to the top of the page">Return to top</a>
-        </v-layout>
-    </v-container>
+        <a href="#top" title="Return to the top of the page" class="page__link">Return to the top</a>
+    </div>
 </template>
 
 <script lang='ts'>

@@ -7,7 +7,7 @@
             allowfullscreen
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             title="An Arduino traffic light system"
-            class="youtube"
+            class="youtube page__image--margin"
         ></iframe>
 
         <img
@@ -23,6 +23,6 @@
             title="A link to the code for the Arduino traffic light system"
         >Download the code</a>
 
-        <a href="#top" title="Return to the top of the page" class="page__link">Return to top</a>
+        <a href="#top" title="Return to the top of the page" class="page__link">Return to the top</a>
     </div>
 </template>

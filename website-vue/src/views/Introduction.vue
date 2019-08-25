@@ -2,7 +2,12 @@
     <div id="top" class="page">
         <h2>Introduction</h2>
 
-        <img v-lazy="require('@/assets/img/me.jpg')" alt="Me" title="Me" class="page__image" />
+        <img
+            v-lazy="require('@/assets/img/me.jpg')"
+            alt="Me"
+            title="Me"
+            class="page__image page__image--margin"
+        />
 
         <p>
             Welcome to my website. The website serves as my portfolio, and contains examples of work related to
@@ -89,6 +94,6 @@
             </ul>
         </section>
 
-        <a href="#top" title="Return to the top of the page" class="page__link">Return to top</a>
+        <a href="#top" title="Return to the top of the page" class="page__link">Return to the top</a>
     </div>
 </template>
