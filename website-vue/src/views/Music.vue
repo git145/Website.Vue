@@ -1,10 +1,8 @@
 <template>
-    <v-container id="top">
-        <v-layout justify-center>
-            <h2>Music</h2>
-        </v-layout>
+    <div id="top" class="page music">
+        <h2>Music</h2>
 
-        <v-layout justify-center>
+        <section class="music__video-wrapper">
             <iframe
                 src="https://www.youtube.com/embed/Qd9P51-aWJk"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -12,23 +10,19 @@
                 title="The video for &quot;Daydream&quot;"
                 class="youtube"
             ></iframe>
-        </v-layout>
 
-        <v-layout justify-center>
             <h3>
-                <p>
-                    Daydream (
-                    <a
-                        :href="require('@/assets/music/daydream.mp3')"
-                        download
-                        title="A link to download the mp3"
-                    >download the mp3</a>
-                    )
-                </p>
+                Daydream (
+                <a
+                    :href="require('@/assets/music/daydream.mp3')"
+                    download
+                    title="A link to download the mp3"
+                >download the mp3</a>
+                )
             </h3>
-        </v-layout>
+        </section>
 
-        <v-layout justify-center>
+        <section class="music__video-wrapper">
             <iframe
                 src="https://www.youtube.com/embed/fhG2QQ0aAac"
                 allowfullscreen
@@ -36,24 +30,18 @@
                 title="The video for &quot;Feel It&quot;"
                 class="youtube"
             ></iframe>
-        </v-layout>
 
-        <v-layout justify-center>
             <h3>
-                <p class="music__title">
-                    Feel It (
-                    <a
-                        :href="require('@/assets/music/feel_it.mp3')"
-                        download
-                        title="A link to download the mp3"
-                    >download the mp3</a>
-                    )
-                </p>
+                Feel It (
+                <a
+                    :href="require('@/assets/music/feel_it.mp3')"
+                    download
+                    title="A link to download the mp3"
+                >download the mp3</a>
+                )
             </h3>
-        </v-layout>
+        </section>
 
-        <v-layout justify-end>
-            <a href="#top" title="Return to the top of the page">Return to top</a>
-        </v-layout>
-    </v-container>
+        <a href="#top" title="Return to the top of the page" class="page__link">Return to top</a>
+    </div>
 </template>

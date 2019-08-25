@@ -1,8 +1,6 @@
 <template>
-    <v-container id="top" grid-list-xl>
-        <v-layout justify-center>
-            <h2>Art</h2>
-        </v-layout>
+    <div id="top" class="page">
+        <h2>Art</h2>
 
         <v-layout row wrap>
             <v-flex xs6 v-for="artItem in art" :key="artItem.id">
@@ -27,10 +25,8 @@
             </v-flex>
         </v-layout>
 
-        <v-layout justify-end>
-            <a href="#top" title="Return to the top of the page">Return to top</a>
-        </v-layout>
-    </v-container>
+        <a href="#top" title="Return to the top of the page" class="page__link">Return to top</a>
+    </div>
 </template>
 
 <script lang='ts'>

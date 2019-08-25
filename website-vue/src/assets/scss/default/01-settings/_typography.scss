@@ -15,8 +15,7 @@ h1 {
 h2 {
     margin-top: 1.875rem;
     margin-bottom: 1.875rem;
-    display: flex;
-    justify-content: center;
+    align-self: center;
 }
 
 h3 {
@@ -29,15 +28,15 @@ p {
 }
 
 a {
-    color: $red-brown;
+    color: $dark-turquoise;
 
     &:link {
-        color: $red-brown;
+        color: $dark-turquoise;
     }
 
     &:visited,
     &:active {
-        color: $orange;
+        color: $tea-green;
     }
 
     &:hover {

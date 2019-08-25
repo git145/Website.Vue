@@ -1,10 +1,8 @@
 <template>
-    <div id="top" class="introduction">
+    <div id="top" class="page">
         <h2>Introduction</h2>
 
-        <div>
-            <img v-lazy="require('@/assets/img/me.jpg')" alt="Me" title="Me" class="page__image" />
-        </div>
+        <img v-lazy="require('@/assets/img/me.jpg')" alt="Me" title="Me" class="page__image" />
 
         <p>
             Welcome to my website. The website serves as my portfolio, and contains examples of work related to
@@ -91,6 +89,6 @@
             </ul>
         </section>
 
-        <a href="#top" title="Return to the top of the page">Return to top</a>
+        <a href="#top" title="Return to the top of the page" class="page__link">Return to top</a>
     </div>
 </template>
