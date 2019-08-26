@@ -1,33 +1,30 @@
 <template>
-    <v-container id="top">
-        <v-layout justify-center>
-            <h2>Introduction</h2>
-        </v-layout>
+    <div id="top" class="page">
+        <h2>Introduction</h2>
 
-        <v-layout justify-center>
-            <img v-lazy="require('@/assets/img/me.png')" alt="Me" title="Me" class="page__image">
-        </v-layout>
+        <img
+            v-lazy="require('@/assets/img/me.jpg')"
+            alt="Me"
+            title="Me"
+            class="page__image page__image--margin"
+        />
 
-        <v-layout>
-            <p>
-                Welcome to my website. The website serves as my portfolio, and contains examples of work related to
-                personal, student, or professional projects I have completed. The links, or images, below can be used
-                to view further assets related to the projects. Included are examples of graphic illustration, concept
-                designs, games, 3D models, Arduino projects, and music. I will add to the site as I produce more work.
-                You are welcome to contact me with professional enquiries through LinkedIn, Coroflot, Hiive, or by
-                email.
-                <a
-                    href="mailto:richardkneale@hotmail.co.uk"
-                    target="_top"
-                >My CV is available on request.</a>
-            </p>
-        </v-layout>
+        <p>
+            Welcome to my website. The website serves as my portfolio, and contains examples of work related to
+            personal, student, or professional projects I have completed. The links, or images, below can be used
+            to view further assets related to the projects. Included are examples of graphic illustration, concept
+            designs, games, 3D models, Arduino projects, and music. I will add to the site as I produce more work.
+            You are welcome to contact me with professional enquiries through LinkedIn, Coroflot, Hiive, or by
+            email.
+            <a
+                href="mailto:richardkneale@hotmail.co.uk"
+                target="_top"
+            >My CV is available on request.</a>
+        </p>
 
-        <v-layout justify-center>
+        <section>
             <h3>Profile</h3>
-        </v-layout>
 
-        <v-layout column>
             <p>
                 I am a hard-working and approachable individual. In my free time I like to complete self-directed
                 learning because I enjoy learning new skills, which I develop quickly. I can work both individually and
@@ -41,13 +38,11 @@
                 to play the electric guitar. I am interested in sports. I enjoy watching football and snooker, as well
                 as professional wrestling.
             </p>
-        </v-layout>
+        </section>
 
-        <v-layout justify-center>
+        <section>
             <h3>Key Skills</h3>
-        </v-layout>
 
-        <v-layout>
             <ul>
                 <li
                     class="page__list-item"
@@ -97,10 +92,8 @@
 
                 <li class="page__list-item">Excellent mathematical ability and written English.</li>
             </ul>
-        </v-layout>
+        </section>
 
-        <v-layout justify-end>
-            <a href="#top" title="Return to the top of the page">Return to top</a>
-        </v-layout>
-    </v-container>
+        <a href="#top" title="Return to the top of the page" class="page__link">Return to the top</a>
+    </div>
 </template>

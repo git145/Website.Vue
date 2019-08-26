@@ -1,16 +1,35 @@
 <template>
-    <div>
-        <v-container id="top">
-            <v-layout justify-center>
-                <h2>{{ artModel.title }}</h2>
-            </v-layout>
+    <div id="top" class="page">
+        <h2>{{ artModel.title }}</h2>
 
-            <v-layout column>
-                <p>Completed for a product design and enterprise module at university.</p>
-            </v-layout>
-        </v-container>
+        <p>Completed for a product design and enterprise module at university.</p>
 
-        <v-container grid-list-xl>
+        <section v-for="image in artModel.images" :key="image.id" class="page__section">
+            <a
+                :href="require(`@/assets/img/${ artModel.directory }/${ image.file }`)"
+                target="_blank"
+                class="page__image-wrapper"
+            >
+                <img
+                    v-lazy="require(`@/assets/img/${ artModel.directory }/${ image.file }`)"
+                    :alt="image.name"
+                    :title="image.name"
+                    class="page__image"
+                />
+            </a>
+
+            <h3 class="page__title--center">
+                {{ image.name }} (
+                <a
+                    :href="require(`@/assets/img/${ artModel.directory }/${ image.file }`)"
+                    target="_blank"
+                    title="A link to the image"
+                >view</a>
+                )
+            </h3>
+        </section>
+
+        <!--<v-container grid-list-xl>
             <v-layout row wrap>
                 <v-flex xs12>
                     <v-carousel light>
@@ -50,13 +69,9 @@
                     </v-card>
                 </v-flex>
             </v-layout>
-        </v-container>
+        </v-container>-->
 
-        <v-container>
-            <v-layout justify-end>
-                <a href="#top" title="Return to the top of the page">Return to top</a>
-            </v-layout>
-        </v-container>
+        <a href="#top" title="Return to the top of the page" class="page__link">Return to the top</a>
     </div>
 </template>
 
