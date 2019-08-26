@@ -1,7 +1,7 @@
 {
-    "name": "richard-kneale-website",
+    "name": "richard-kneale-portfolio",
     "version": "0.1.0",
-    "description": "Richard Kneale Website",
+    "description": "Richard Kneale Portfolio",
     "author": "Richard Kneale",
     "private": true,
     "scripts": {

@@ -10,7 +10,7 @@
         />
 
         <p>
-            Welcome to my website. The website serves as my portfolio, and contains examples of work related to
+            Welcome to my portfolio, which contains examples of work related to
             personal, student, or professional projects I have completed. The links, or images, below can be used
             to view further assets related to the projects. Included are examples of graphic illustration, concept
             designs, games, 3D models, Arduino projects, and music. I will add to the site as I produce more work.
