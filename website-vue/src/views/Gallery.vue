@@ -27,46 +27,6 @@
             </h3>
         </section>
 
-        <!--<v-layout row wrap>
-            <v-flex xs12>
-                <v-carousel light>
-                    <v-carousel-item
-                        v-for="image in artImages"
-                        :key="image.id"
-                        :src="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
-                        :title="image.name"
-                        :alt="image.name"
-                    ></v-carousel-item>
-                </v-carousel>
-            </v-flex>
-
-            <v-flex xs6 v-for="image in artImages" :key="image.id">
-                <v-card dark>
-                    <v-img
-                        :src="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
-                        aspect-ratio="2.75"
-                        :title="image.name"
-                        :alt="image.name"
-                    ></v-img>
-
-                    <v-card-title>
-                        <div>
-                            <h3 class="headline mb-0">{{ image.name }}</h3>
-                        </div>
-                    </v-card-title>
-
-                    <v-card-actions>
-                        <v-btn
-                            flat
-                            color="orange"
-                            :href="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
-                            target="_blank"
-                        >Explore</v-btn>
-                    </v-card-actions>
-                </v-card>
-            </v-flex>
-        </v-layout>-->
-
         <a href="#top" title="Return to the top of the page" class="page__link">Return to the top</a>
     </div>
 </template>

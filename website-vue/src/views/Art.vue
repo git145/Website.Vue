@@ -22,29 +22,6 @@
             </h3>
         </section>
 
-        <!--<v-layout row wrap>
-            <v-flex xs6 v-for="artItem in art" :key="artItem.id">
-                <v-card dark>
-                    <v-img
-                        :src="require(`@/assets/img/${ artItem.directory }/${ artItem.images[0].file }`)"
-                        aspect-ratio="2.75"
-                        :title="artItem.name"
-                        :alt="artItem.name"
-                    ></v-img>
-
-                    <v-card-title>
-                        <div>
-                            <h3 class="headline mb-0">{{ artItem.title }}</h3>
-                        </div>
-                    </v-card-title>
-
-                    <v-card-actions>
-                        <v-btn flat color="orange" :href="`/#/art/${ artItem.directory }`">Explore</v-btn>
-                    </v-card-actions>
-                </v-card>
-            </v-flex>
-        </v-layout>-->
-
         <a href="#top" title="Return to the top of the page" class="page__link">Return to the top</a>
     </div>
 </template>
