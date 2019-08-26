@@ -4,7 +4,7 @@ module.exports = {
     pluginOptions: {
         electronBuilder: {
             builderOptions: {
-                "artifactName": "website-vue.exe",
+                "artifactName": "richard-kneale-website.exe",
                 "win": {
                     "target": [
                         {

@@ -7,7 +7,7 @@
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             title="Tip the Crates"
-            class="youtube"
+            class="youtube page__image--margin"
         ></iframe>
 
         <p>Tip the crates to reach the goal. Earn achievements and compete to be the best.</p>

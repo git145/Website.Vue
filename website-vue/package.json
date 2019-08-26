@@ -1,7 +1,7 @@
 {
-    "name": "website-vue",
+    "name": "richard-kneale-website",
     "version": "0.1.0",
-    "description": "Website Vue",
+    "description": "Richard Kneale Website",
     "author": "Richard Kneale",
     "private": true,
     "scripts": {
