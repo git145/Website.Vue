@@ -89,10 +89,6 @@ export default class ArtModel {
                     file: "windmill.png"
                 },
                 {
-                    name: "The White Cliffs of Dover",
-                    file: "white_cliffs.png"
-                },
-                {
                     name: "Ruin",
                     file: "ruin.png"
                 },
@@ -109,20 +105,8 @@ export default class ArtModel {
                     file: "wolverine.png"
                 },
                 {
-                    name: "Church of St. Nicholas",
-                    file: "church_st_nicholas.png"
-                },
-                {
-                    name: "ED-E (Fallout: New Vegas)",
-                    file: "ed_e.png"
-                },
-                {
                     name: "Blob",
                     file: "blob.png"
-                },
-                {
-                    name: "Bidston Windmill",
-                    file: "bidston_windmill.png"
                 },
                 {
                     name: "A.J. Styles",
@@ -201,6 +185,32 @@ export default class ArtModel {
                 {
                     name: "Tali'Zorah nar Rayya",
                     file: "tali_zorah.png"
+                }
+            ]
+        },
+        {
+            title: "Traditional Art",
+            directory: "traditional",
+            images: [
+                {
+                    name: "The Jungle",
+                    file: "jungle.jpg"
+                },
+                {
+                    name: "Mountains",
+                    file: "mountains.jpg"
+                },
+                {
+                    name: "The White Cliffs of Dover",
+                    file: "white_cliffs.png"
+                },
+                {
+                    name: "Bidston Windmill",
+                    file: "bidston_windmill.png"
+                },
+                {
+                    name: "Goblin",
+                    file: "goblin.jpg"
                 }
             ]
         },

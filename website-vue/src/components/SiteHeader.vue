@@ -6,8 +6,8 @@
                     <router-link
                         to="/"
                         class="header__link"
-                        title="git145"
-                    >git145</router-link>
+                        title="Richard Kneale"
+                    >Richard Kneale</router-link>
                 </h1>
             </div>
 

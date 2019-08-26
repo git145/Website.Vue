@@ -4,6 +4,7 @@ export enum ArtEnum {
     TekkenFanArt,
     ThreeD,
     MassEffect,
+    Traditional,
     ConceptArt,
     ResidentEvil,
     Toys,

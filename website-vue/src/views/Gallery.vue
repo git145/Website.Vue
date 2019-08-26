@@ -1,10 +1,33 @@
 <template>
-    <v-container v-if="hasArt" grid-list-xl>
-        <v-layout justify-center>
-            <h2>{{ artTitle }}</h2>
-        </v-layout>
+    <div id="top" class="page">
+        <h2>{{ artTitle }}</h2>
 
-        <v-layout row wrap>
+        <section v-for="image in artImages" :key="image.id" class="page__section">
+            <a
+                :href="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
+                target="_blank"
+                class="page__image-wrapper"
+            >
+                <img
+                    v-lazy="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
+                    :alt="image.name"
+                    :title="image.name"
+                    class="page__image"
+                />
+            </a>
+
+            <h3 class="page__title--center">
+                {{ image.name }} (
+                <a
+                    :href="require(`@/assets/img/${ artDirectory }/${ image.file }`)"
+                    target="_blank"
+                    title="A link to the image"
+                >view</a>
+                )
+            </h3>
+        </section>
+
+        <!--<v-layout row wrap>
             <v-flex xs12>
                 <v-carousel light>
                     <v-carousel-item
@@ -42,12 +65,10 @@
                     </v-card-actions>
                 </v-card>
             </v-flex>
-        </v-layout>
+        </v-layout>-->
 
-        <v-layout justify-end>
-            <a href="#top" title="Return to top">Return to top</a>
-        </v-layout>
-    </v-container>
+        <a href="#top" title="Return to the top of the page" class="page__link">Return to the top</a>
+    </div>
 </template>
 
 <script lang='ts'>
@@ -104,6 +125,11 @@ export default class Gallery extends Vue {
             }
             case "mass_effect": {
                 art = this.artModelValue[ArtEnum.MassEffect];
+
+                break;
+            }
+            case "traditional": {
+                art = this.artModelValue[ArtEnum.Traditional];
 
                 break;
             }
