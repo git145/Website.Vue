@@ -4,7 +4,7 @@ module.exports = {
     pluginOptions: {
         electronBuilder: {
             builderOptions: {
-                "artifactName": "richard-kneale-website.exe",
+                "artifactName": "richard-kneale-portfolio.exe",
                 "win": {
                     "target": [
                         {
