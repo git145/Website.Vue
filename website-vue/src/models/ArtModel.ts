@@ -197,6 +197,10 @@ export default class ArtModel {
                     file: "jungle.jpg"
                 },
                 {
+                    name: "Cardinals",
+                    file: "cardinals.jpg"
+                },
+                {
                     name: "Mountains",
                     file: "mountains.jpg"
                 },
